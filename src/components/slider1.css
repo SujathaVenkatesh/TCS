@@ -1,5 +1,5 @@
 .name {
-  background: url('C:\Users\SUJATHA V\OneDrive\Desktop\React web\reactwebpro\webproject\src\components\images\tcs7.jpeg') center center/cover no-repeat;
+  background: url('./images/tcs7.jpeg') center center/cover no-repeat;
   height: 80vh;
   width: 100%;
   display: flex;
