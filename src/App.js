@@ -4,8 +4,8 @@ import './App.css';
 import Home from './components/pages/Home';
 import { BrowserRouter as Router,Route,Switch} from 'react-router-dom';
 // import About from './components/pages/About';
-// import Products from './components/pages/Products';
-// import SignUp from './components/pages/Signup';
+import Contact from './components/pages/Contact';
+import Signup from './components/pages/Signup';
 
 function App() {
   return (
@@ -13,10 +13,11 @@ function App() {
       <Router>
         <Navbar />
         <Switch>
-          <Route path='/' exact component={Home} />
+          <Route path='/' exact component={Home}/>
            {/* <Route path='/Who we are' component={About} />  */}
-          {/* //  <Route path='/products' component={Products} /> */}
-        {/* <Route path='/sign-up' component={SignUp} />  */} */}
+          <Route path='/Contact' component={Contact} />
+          {/* //  <Route path='/' component={Contact} /> */}
+          <Route path='/Signup' component={Signup} />
         </Switch>
       </Router>
     </>
