@@ -19,7 +19,7 @@ function Cards() {
           <div className="card-content">
             <p className="card-description">The battle of big vs small data</p>
           </div>
-          <a href="#" className="vertical-line" alt="name"><FaBook className="read-more-icon" />
+          <a href="name" className="vertical-line" alt="name"><FaBook className="read-more-icon" />
             READ MORE
           </a>
         </div>
@@ -27,7 +27,7 @@ function Cards() {
           <img src={img2} className="w-100 border-bottom" alt="Services" />
           <div className="card-content">
             <p className="card-description">AI joins hands with health</p>
-            <a href="#" className="vertical-line" alt="name">
+            <a href="name" className="vertical-line" alt="name">
             <FaBook className="read-more-icon" />
             READ MORE
           </a>
@@ -38,7 +38,7 @@ function Cards() {
           <img src={tcss2} className="w-100 border-bottom" alt="Services" />
           <div className="card-content">
             <p className="card-description">Linking all the moving parts</p>
-            <a href="#" className="vertical-line" alt="name">
+            <a href="name" className="vertical-line" alt="name">
             <FaBook className="read-more-icon" />
             READ MORE
           </a>
