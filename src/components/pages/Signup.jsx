@@ -1,46 +1,85 @@
 import React from 'react';
 import './Signup.css';
+import loginlogo from '../images/loginlogo.jpg';
+import { FaApple, FaGoogle, FaLinkedin } from 'react-icons/fa';
 
 function Signup() {
   return (
-    <div className="container">
-      <div className='form_container'>
-        <div className='logo_container' />
+    <div className='form_wrapper'>
+      <form className='form_container'>
         <div className='title_container'>
+        <div className='logo_container'>
+        <img src={loginlogo} className='logo' alt='' />
+          </div>
           <p className='title'>Login to your account</p>
-          <span className='subtitle'>Get started with your app, just create an account and enjoy the experience</span>
-        </div>
-        <br />
-        <div className='input_container'>
-          <label className='input_label' htmlFor='email_field'>Email</label>
-          <svg className='icon' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'>
-            <path d='M0 0h24v24H0z' fill='none' />
-            {/* Add the correct paths for the SVG */}
-          </svg>
-          <input placeholder='name@gmail.com' title='name_title' name='input-name' type='text' className='input_field' id='email_field' />
+          <span className='subtitle'>
+            Get started with your app, just create an account and enjoy the experience
+          </span>
         </div>
         <div className='input_container'>
-          <label className='input_label' htmlFor='password_field'>Password</label>
+          <label className='input_label' htmlFor='email_field'>
+            Email
+          </label>
           <svg className='icon' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'>
-            <path d='M0 0h24v24H0z' fill='none' />
-            {/* Add the correct paths for the SVG */}
+            <path d='find the full path on my github' />
+            <path d='find the full path on my github' />
           </svg>
-          <input placeholder='Password' title='password_title' name='input-password' type='password' className='input_field' id='password_field' />
+          <input
+            placeholder='name@gmail.com'
+            title='name_title'
+            name='input-name'
+            type='text'
+            className='input_field'
+            id='email_field'
+          />
         </div>
-        <button title='sign_up' type='submit' className='sign_in_btn'><span>Sign In</span></button>
-        <div className='seperator'>
-          <hr className='line' /><span>or</span><hr className='line' />
-        </div>
-        <button title='sign_in_google' type='submit' className='sign_in_ggl'><span>Sign In with Google</span></button>
-        <button title='sign_in' type='submit' className='sign_in_ggl'>
-          <svg height='20px' width='16px' xmlns='http://www.w3.org/2000/svg' xmlnsXlink='https://www.w3.org/1999/xlink' preserveAspectRatio='xMidYMid' viewBox='0 0 256 315'>
-            <path fill='#ffffff' d='M0 0h256v315H0z' />
-            {/* Add the correct path for the SVG */}
+        <div className='input_container'>
+          <label className='input_label' htmlFor='password_field'>
+            Password
+          </label>
+          <svg className='icon' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'>
+            <path d='find the full path on my github' />
+            <path d='find the full path on my github' />
+            <path fill='#141B34' d='find the full path on my github' />
           </svg>
-          <span>Sign in with Apple</span>
+          <input
+            placeholder='Password'
+            title='password_title'
+            name='input-password'
+            type='password'
+            className='input_field'
+            id='password_field'
+          />
+        </div>
+        <button title='sign up' type='submit' className='sign-in_btn'>
+          <span>Sign In</span>
         </button>
-        <p className='note'>Terms of Use &amp; Conditions</p>
-      </div>
+        <div className='seperator'>
+          <hr className='line' />
+          <span>or</span>
+          <hr className='line' />
+        </div>
+        <button title='sign in' type='submit' className='sign-in_ggl'>
+          <FaGoogle/>
+          <span>Sign In with Google</span>
+        </button>
+        <button title='sign-in' type='submit' className='sign-in_ggl'>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 17h-1v-7H7v-1h3V7h1v4h4v1h-4v7z"/>
+</svg>
+          <span>Sign in with Github</span>
+        </button>
+        <button title='sign in' type='submit' className='sign-in_ggl'>
+          <FaLinkedin/>
+          <span>Sign In with Linkedin</span>
+        </button>
+        <button title='sign in' type='submit' className='sign-in_ggl'>
+          <FaApple/>
+          <span>Sign In with Apple</span>
+        </button>
+        <p className='note'>Terms of use &amp; Conditions</p>
+
+      </form>
     </div>
   );
 }

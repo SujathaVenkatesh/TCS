@@ -10,6 +10,7 @@
     "dom": "^0.0.3",
     "emailjs-com": "^2.6.0",
     "framer-motion": "^10.12.16",
+    "googleapis": "^118.0.0",
     "mdb-react-ui-kit": "^6.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
