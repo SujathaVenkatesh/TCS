@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import tcs2 from './images/tcs2.jpg';
-import './session.css'; 
+import './session.css';
 
 function Session() {
+  const [showParagraph, setShowParagraph] = useState(false);
+
+  const toggleParagraph = () => {
+    setShowParagraph(!showParagraph);
+  };
+
   return (
     <div className="session-container">
       <h1 className="session-heading">Session Title</h1>
@@ -11,7 +17,7 @@ function Session() {
       <div className="columns-container">
         <div className="column">
           <div className='about-img'>
-            <img src={tcs2} className="border-bottom animated-image" alt=" " />
+            <img src={tcs2} className="border-bottom animated-image" alt="" />
           </div>
         </div>
 
@@ -19,12 +25,14 @@ function Session() {
           <div className='about-content'>
             <h3 className='heading'>WHO WE ARE</h3><br />
             <h1 className="animated-title">We build greater futures<br />through innovation and<br />collective knowledge.</h1><br />
-            <p>
-              TCS is an IT services, consulting, and business solutions
-              organization that has been partnering with many of the world’s largest businesses in their transformation journeys for over 50 years.
-            </p>
-            <button className="link-button animated-button">
-              Get to know us
+            {showParagraph && (
+              <p>
+                TCS is an IT services, consulting, and business solutions
+                organization that has been partnering with many of the world’s largest businesses in their transformation journeys for over 50 years.
+              </p>
+            )}
+            <button className="link-button animated-button" onClick={toggleParagraph}>
+              {showParagraph ? 'Read More' : 'Get to know us'}
             </button>
           </div>
         </div>

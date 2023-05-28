@@ -25,11 +25,9 @@ function Carousel() {
             </div>
             <div className="card__content">
               <span className="card__title">A new,nimble NWC</span>
-              <span className="card__name">tcs</span>
+              <span className="card__name">Agility</span>
               <p className="card__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit veritatis labore provident non tempora
-                odio est sunt, ipsum.
-              </p>
+              At our company, we are excited to announce the launch of our new and improved NWC (Networked Workflow Collaboration) platform. Designed to enhance productivity and streamline collobration</p>
               <button className="card__btn">View More</button>
             </div>
           </div>
@@ -42,11 +40,9 @@ function Carousel() {
             </div>
             <div className="card__content">
               <span className="card__title">UI Designer</span>
-              <span className="card__name">tcs</span>
+              <span className="card__name">Creativity</span>
               <p className="card__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit veritatis labore provident non tempora
-                odio est sunt, ipsum.
-              </p>
+              As a UI designer, I specialize in creating visually appealing and user-friendly interfaces for digital products. With a keen eye for aesthetics and a strong understanding of user experience.</p>
               <button className="card__btn">View More</button>
             </div>
           </div>
@@ -59,10 +55,11 @@ function Carousel() {
             </div>
             <div className="card__content">
               <span className="card__title">Web Developer</span>
-              <span className="card__name">tcs</span>
+              <span className="card__name">Coding</span>
               <p className="card__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit veritatis labore provident non tempora
-                odio est sunt, ipsum.
+              As a web developer,I have a passion for creating dynamic and interactive websites that provide seamless user experiences. With a strong foundation in web development technologies.
+
+
               </p>
               <button className="card__btn">View More</button>
             </div>
