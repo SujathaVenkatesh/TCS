@@ -4,6 +4,7 @@ import { RiMessengerLine } from "react-icons/ri";
 import { RiWhatsappLine } from "react-icons/ri";
 import emailjs from "emailjs-com";
 import "./Contact.css";
+import Footer from '../Footer';
 
 function Contact() {
   const formRef = useRef(null);
@@ -33,6 +34,8 @@ function Contact() {
   }
 
   return (
+    <>
+
     <section id="contact">
       <h2>Contact Us</h2>
       <div className="contact__container">
@@ -46,13 +49,13 @@ function Contact() {
   <div className={`contact__option ${isSent ? "sent" : ""}`}>
     <RiMessengerLine className="contact__option-icon" />
     <h4>Messenger</h4>
-    <h5>TCS World</h5>
+    <h5>Why Global Services</h5>
     <a href="https://m.me">Send a message</a>
   </div>
   <div className={`contact__option ${isSent ? "sent" : ""}`}>
     <RiWhatsappLine className="contact__option-icon" />
     <h4>Contact</h4>
-    <h5>+91 7904544228</h5>
+    <h5>+91 86672 79822</h5>
     <a href="https://api.whatsapp.com/send?phone=917904544228">Send a message</a>
   </div>
 </div>
@@ -74,6 +77,9 @@ function Contact() {
         </form>
       </div>
     </section>
+    <Footer/>
+
+    </>
   );
 }
 

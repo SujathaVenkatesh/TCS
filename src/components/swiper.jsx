@@ -1,6 +1,8 @@
 import React, { useState} from 'react';
 import 'swiper/swiper-bundle.min.css';
-import tcs1 from './images/tcs1.jpg';
+import web from './images/web.jpg';
+import digital from './images/digital.avif';
+import ui from './images/ui.avif';
 import './swiper.css';
 
 function Carousel() {
@@ -21,14 +23,14 @@ function Carousel() {
         <div className="swiper-slide">
           <div className="cardname">
             <div className="card__image">
-            <img src={tcs1} alt="cardimage" onClick={() => handleImageClick(tcs1)} />
+            <img src={digital} alt="cardimage" onClick={() => handleImageClick(digital)} />
             </div>
             <div className="card__content">
-              <span className="card__title">A new,nimble NWC</span>
-              <span className="card__name">Agility</span>
+              <span className="card__title">Digital Marketing</span>
+              <span className="card__name">Engagement</span>
               <p className="card__text">
-              At our company, we are excited to announce the launch of our new and improved NWC (Networked Workflow Collaboration) platform. Designed to enhance productivity and streamline collobration</p>
-              <button className="card__btn">View More</button>
+               It involves the power of the internet, social media platforms, search engines, email marketing, content marketing, and other digital mediums to reach and engage with target audiences.             <button className="card__btn">View More</button>
+            </p>
             </div>
           </div>
         </div>
@@ -36,7 +38,7 @@ function Carousel() {
         <div className="swiper-slide">
           <div className="cardname">
             <div className="card__image">
-            <img src={tcs1} alt="cardimage" onClick={() => handleImageClick(tcs1)} />
+            <img src={ui} alt="cardimage" onClick={() => handleImageClick(ui)} />
             </div>
             <div className="card__content">
               <span className="card__title">UI Designer</span>
@@ -51,7 +53,7 @@ function Carousel() {
         <div className="swiper-slide">
           <div className="cardname">
             <div className="card__image">
-            <img src={tcs1} alt="cardimage" onClick={() => handleImageClick(tcs1)} />
+            <img src={web} alt="cardimage" onClick={() => handleImageClick(web)} />
             </div>
             <div className="card__content">
               <span className="card__title">Web Developer</span>

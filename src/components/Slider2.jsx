@@ -1,18 +1,17 @@
 import React from 'react';
 import '../App.css';
 import { Button } from './button';
-import './slider1.css';
+import './Slider2.css';
+import { Link } from 'react-router-dom';
 
 function Slider() {
   return (
-    <div className='name'>
-      <h1>WHY Global Services</h1>
-      <p>Digital Marketing|Web development|Product development<br></br>
-        <center> E- Commerce|Content development </center>
-      </p>
+    <div className='names'>
+      <h1>WHO WE ARE</h1>
       <div className='hero-btns'>
-        <Button className='btns' buttonStyle='btn--outline' buttonSize='btn--large'>GET STARTED</Button>
-        {/* <Button
+      <Button className='btns' buttonStyle='btn--outline' buttonSize='btn--large'>
+  <Link to="/AboutUs">About Us</Link>
+</Button>        {/* <Button
           className='btns'
           buttonStyle='btn--primary'
           buttonSize='btn--large'

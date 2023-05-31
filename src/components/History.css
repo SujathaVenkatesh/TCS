@@ -1,0 +1,102 @@
+.cardname {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    perspective: 1000px;
+  }
+  
+  .front,
+  .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  
+  .front {
+    transform: rotateY(0deg);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .back {
+    transform: rotateY(180deg);
+    background-color: black;
+    padding: 30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center; /* Add this line to center align the content horizontally */
+  }
+  
+  .back h3 {
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 9px;
+    letter-spacing: 1px;
+  }
+  
+  .back p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .back {
+    /* Updated class name for the second card's back section */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .cardname.flipped .front {
+    transform: rotateY(180deg);
+  }
+  
+  .cardname.flipped .back {
+    transform: rotateY(0deg);
+  }
+  
+  .orange-icon {
+    color: orange;
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .card-container::before {
+    content: "";
+    width: 2px;
+    height: 80%;
+    background-color: white;
+    margin: 0 10px; /* Adjust the spacing between the cards */
+  }
+  

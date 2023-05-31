@@ -14,6 +14,7 @@ function Home() {
       <Session/> 
       <Carousel/> 
       <Footer/>
+
     </>
   );
 }

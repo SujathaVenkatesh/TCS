@@ -27,12 +27,13 @@ function Session() {
             <h1 className="animated-title">We build greater futures<br />through innovation and<br />collective knowledge.</h1><br />
             {showParagraph && (
               <p>
-                TCS is an IT services, consulting, and business solutions
-                organization that has been partnering with many of the world’s largest businesses in their transformation journeys for over 50 years.
+                 We enable businesses to embrace technologies and empower them to achieve their 
+                 business 
+                 goals and objectives..
               </p>
             )}
             <button className="link-button animated-button" onClick={toggleParagraph}>
-              {showParagraph ? 'Read More' : 'Get to know us'}
+              {showParagraph ? 'Get to Know us' : 'Read More'}
             </button>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import './Signup.css';
 import loginlogo from '../images/loginlogo.jpg';
-import { FaApple, FaGoogle, FaLinkedin } from 'react-icons/fa';
+import { FaApple, FaGoogle} from 'react-icons/fa';
 
 function Signup() {
   return (
@@ -63,16 +63,8 @@ function Signup() {
           <FaGoogle/>
           <span>Sign In with Google</span>
         </button>
-        <button title='sign-in' type='submit' className='sign-in_ggl'>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 17h-1v-7H7v-1h3V7h1v4h4v1h-4v7z"/>
-</svg>
-          <span>Sign in with Github</span>
-        </button>
-        <button title='sign in' type='submit' className='sign-in_ggl'>
-          <FaLinkedin/>
-          <span>Sign In with Linkedin</span>
-        </button>
+      
+       
         <button title='sign in' type='submit' className='sign-in_ggl'>
           <FaApple/>
           <span>Sign In with Apple</span>

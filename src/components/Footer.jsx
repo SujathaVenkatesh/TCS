@@ -1,99 +1,63 @@
 import React from 'react';
 import './Footer.css';
-import logo from './images/tcslogo5.webp';
+import { FaFacebook,FaInstagram, FaTwitter,FaLinkedin, FaYoutube } from 'react-icons/fa';
 
-import { Button } from './button';
-import { Link } from 'react-router-dom';
-
-function Footer() {
+const Footer = () => {
   return (
-    <div className='footer-container'>
-      <section className='footer-subscription'>
-        <p className='footer-subscription-heading'>
-          Join the Adventure newsletter to receive our best vacation deals
+    <footer className="footer-distributed">
+      <div className="footer-left">
+        <h3>
+          Why <span>Global Services</span>
+        </h3>
+        <p className="footer-links">
+          <a href="/" alt="name">Home</a> | <a href="/AboutUs" alt="name">About</a> | <a href="/Contact" alt="name">Contact</a> | <a href="/SignUp" alt="name">Join Our Team</a>
         </p>
-        <p className='footer-subscription-text'>
-          You can unsubscribe at any time.
+        <p className="footer-company-name">
+        Copyright © 2022.All rights reserved
         </p>
-        <div className='input-areas'>
-          <form>
-            <input
-              className='footer-input'
-              name='email'
-              type='email'
-              placeholder='Your Email'
-            />
-            <Button buttonStyle='btn--outline'>Subscribe</Button>
-          </form>
+      </div>
+      <div className="footer-center">
+        <div>
+          <i className="fa fa-map-marker"></i>
+          <p>
+            <span>No.4th Floor, Elcanso Apartments 9/10, <br></br>Tamizh Salai, CASA Major Rd, Egmore, Chennai, </span> Tamil Nadu 600008
+          </p>
         </div>
-      </section>
-      <div class='footer-links'>
-        <div className='footer-link-wrapper'>
-          <div class='footer-link-items'>
-            <h2>Industries</h2>
-            <Link to='/sign-up'>How it works</Link>
-            <Link to='/'>Testimonials</Link>
-            <Link to='/'>Careers</Link>
-            <Link to='/'>Investors</Link>
-            <Link to='/'>Terms of Service</Link>
-          </div>
-          <div class='footer-link-items'>
-            <h2>Services</h2>
-            <Link to='/'>Contact</Link>
-            <Link to='/'>Support</Link>
-            <Link to='/'>Destinations</Link>
-            <Link to='/'>Sponsorships</Link>
-          </div>
+        <div>
+          <i className="fa fa-phone"></i>
+          <p>+91- 86670 79822</p>
         </div>
-        <div className='footer-link-wrapper'>
-          <div class='footer-link-items'>
-            <h2>Platforms</h2>
-            <Link to='/'>Submit Video</Link>
-            <Link to='/'>Ambassadors</Link>
-            <Link to='/'>Agency</Link>
-            <Link to='/'>Influencer</Link>
-          </div>
-          <div class='footer-link-items'>
-            <h2>Contact Us</h2>
-            <Link to='/'>Instagram</Link>
-            <Link to='/'>Facebook</Link>
-            <Link to='/'>Youtube</Link>
-            <Link to='/'>Twitter</Link>
-          </div>
+        <div>
+          <i className="fa fa-envelope"></i>
+          <p>
+            <a href="mailto:why@whyglobalservices.com">why@whyglobalservices.com</a>
+          </p>
         </div>
       </div>
-      <section className='social-media'>
-        <div className='social-media-wrap'>
-          <Link to='/' className='social-logo'>
-            <img src={logo} alt="Logo of the company" className='logo'/>
-          </Link>
-          <small className='website-rights'>© 2023 TATA Consultancy Services Limited</small>
-          <div className='social-icons'>
-            <Link className='social-icon-link facebook' to='/' target='_blank' aria-label='Facebook'>
-              <i className='fab fa-facebook-f' />
-            </Link>
-            <Link className='social-icon-link instagram' to='/' target='_blank' aria-label='Instagram'>
-              <i className='fab fa-instagram' />
-            </Link>
-            <Link className='social-icon-link youtube' to='/' target='_blank' aria-label='Youtube'>
-              <i className='fab fa-youtube' />
-            </Link>
-            <Link className='social-icon-link twitter' to='/' target='_blank' aria-label='Twitter'>
-              <i className='fab fa-twitter' />
-            </Link>
-            <Link className='social-icon-link linkedin' to='/' target='_blank' aria-label='LinkedIn'>
-              <i className='fab fa-linkedin' />
-            </Link>
-          </div>
+      <div className="footer-right">
+        <p className="footer-company-about">
+          <span>About the company</span>WHY Global Services was established in 2009 in UK and is one of the leading software and web development companies in Chennai that creates end-to-end solutions, from concept and strategy, to design, implementation and support, helping clients achieves their business goals.
+        </p>
+        <div className="footer-icons">
+          <a href="/name" alt="names">
+            <FaFacebook/>
+          </a>
+          <a href="/Whytap" alt="names">
+            <FaInstagram/>
+          </a>
+          <a href="/name" alt="names">
+            <FaLinkedin/>
+          </a>
+          <a href="/name" alt="names">
+            <FaTwitter/>
+          </a>
+          <a href="/name" alt="names">
+            <FaYoutube/>
+          </a>
         </div>
-        <div className='footer-bottom'>
-          <Link to='/'>Privacy Notice</Link>
-          <Link to='/'>Cookie Policy</Link>
-          <Link to='/'>Disclaimer</Link>
-        </div>
-      </section>
-    </div>
+      </div>
+    </footer>
   );
-}
+};
 
 export default Footer;
