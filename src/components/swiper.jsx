@@ -29,8 +29,11 @@ function Carousel() {
               <span className="card__title">Digital Marketing</span>
               <span className="card__name">Engagement</span>
               <p className="card__text">
-               It involves the power of the internet, social media platforms, search engines, email marketing, content marketing, and other digital mediums to reach and engage with target audiences.             <button className="card__btn">View More</button>
+               It involves the power of the internet, socialmedia platforms, search engines, email marketing, content marketing, and other digital mediums to reach and engage with target audiences.          
             </p>
+            <a href="/DM">
+  <button class="card__btn">View More</button>
+</a>
             </div>
           </div>
         </div>
@@ -45,8 +48,9 @@ function Carousel() {
               <span className="card__name">Creativity</span>
               <p className="card__text">
               As a UI designer, I specialize in creating visually appealing and user-friendly interfaces for digital products. With a keen eye for aesthetics and a strong understanding of user experience.</p>
-              <button className="card__btn">View More</button>
-            </div>
+              <a href="/UI">
+  <button class="card__btn">View More</button>
+</a>            </div>
           </div>
         </div>
 
@@ -63,8 +67,9 @@ function Carousel() {
 
 
               </p>
-              <button className="card__btn">View More</button>
-            </div>
+              <a href="Web">
+  <button class="card__btn">View More</button>
+</a>            </div>
           </div>
         </div>
         {showImage && (
