@@ -13,7 +13,7 @@ function DM() {
 
         <div className="about-us-content">
           <div className="image-container">
-            <img src={digi} alt="Company Image" className="company-image" />
+            <img src={digi} alt="companyImage" className="company-image" />
           </div>
           <div className="content-container">
             <p>

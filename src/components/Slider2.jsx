@@ -1,8 +1,6 @@
 import React from 'react';
 import '../App.css';
-import { Button } from './button';
 import './Slider2.css';
-import { Link } from 'react-router-dom';
 
 function Slider() {
   return (
