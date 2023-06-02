@@ -97,7 +97,7 @@
     color: #fff;
   }
   .info{
-    background-color: orange;
+    background-color: lightsalmon;
   }
   .info h3{
     color: #fff;
@@ -112,7 +112,7 @@
     min-width:40px;
     height: 40px;
     color: #fff;
-    background-color:orange;
+    background-color:lightsalmon;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -27,7 +27,7 @@ const AboutUs = () => {
               <div className="card-contentss">
                 <i className="fas fa-globe"></i>
                 <h3>GLOBAL PRESENCE</h3>
-                <h6>9+COUNTRIES</h6>
+                <h5>9+COUNTRIES</h5>
               </div>
             </div>
 
@@ -35,7 +35,7 @@ const AboutUs = () => {
               <div className="card-contentss">
                 <i className="fas fa-industry"></i>
                 <h3>INDUSTRIAL EXPERIENCE</h3>
-                <h6>9+ YEARS</h6>
+                <h5>9+ YEARS</h5>
               </div>
             </div>
 
@@ -43,7 +43,7 @@ const AboutUs = () => {
               <div className="card-contentss">
                 <i className="fas fa-cogs"></i>
                 <h3>INDUSTRIES SERVED</h3>
-                <h6>25+ SECTORS</h6>
+                <h5>25+ SECTORS</h5>
               </div>
             </div>
 
@@ -51,7 +51,7 @@ const AboutUs = () => {
               <div className="card-contentss">
                 <i className="fas fa-users"></i>
                 <h3>TALENTFORCE</h3>
-                <h6>50+ EMPLOYEES</h6>
+                <h5>50+ EMPLOYEES</h5>
               </div>
             </div>
           </div>

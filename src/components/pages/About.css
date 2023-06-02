@@ -66,8 +66,15 @@
   margin-top: 20px;
 }
 
+
+.card-contentss i {
+  font-size: 70px;
+  margin-bottom: 10px;
+
+}
+
 .cardss-content i {
-  font-size: 40px;
+  font-size: 50px;
   margin-bottom: 10px;
 }
 
