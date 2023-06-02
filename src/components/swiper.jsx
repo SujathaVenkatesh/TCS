@@ -67,9 +67,9 @@ function Carousel() {
 
 
               </p>
-              <a href="Web">
+                    <a href="/Webs">
   <button class="card__btn">View More</button>
-</a>            </div>
+</a>         </div>
           </div>
         </div>
         {showImage && (

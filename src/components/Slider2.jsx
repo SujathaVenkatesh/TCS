@@ -9,9 +9,7 @@ function Slider() {
     <div className='names'>
       <h1>WHO WE ARE</h1>
       <div className='hero-btns'>
-      <Button className='btns' buttonStyle='btn--outline' buttonSize='btn--large'>
-  <Link to="/AboutUs">About Us</Link>
-</Button>        {/* <Button
+          {/* <Button
           className='btns'
           buttonStyle='btn--primary'
           buttonSize='btn--large'

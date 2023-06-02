@@ -39,19 +39,19 @@ const Footer = () => {
           <span>About the company</span>WHY Global Services was established in 2009 in UK and is one of the leading software and web development companies in Chennai that creates end-to-end solutions, from concept and strategy, to design, implementation and support, helping clients achieves their business goals.
         </p>
         <div className="footer-icons">
-          <a href="/name" alt="names">
+          <a href="https://www.facebook.com/whyglobal/" alt="names">
             <FaFacebook/>
           </a>
-          <a href="/Whytap" alt="names">
+          <a href="https://www.instagram.com/" alt="names">
             <FaInstagram/>
           </a>
-          <a href="/name" alt="names">
+          <a href="https://www.linkedin.com/" alt="names">
             <FaLinkedin/>
           </a>
-          <a href="/name" alt="names">
+          <a href="https://twitter.com/i/flow/login" alt="names">
             <FaTwitter/>
           </a>
-          <a href="/name" alt="names">
+          <a href="https://www.youtube.com/" alt="names">
             <FaYoutube/>
           </a>
         </div>

@@ -18,7 +18,7 @@ function History() {
   return (
     <div className="card-container">
       <div className={`cardname ${isFlipped1 ? 'flipped' : ''}`} onClick={handleClick1}>
-        <div className="card">
+        <div className="cardr">
           <div className="front">
             <img src={mission1} alt="services" />
           </div>
@@ -33,7 +33,7 @@ function History() {
       </div>
 
       <div className={`cardname ${isFlipped2 ? 'flipped' : ''}`} onClick={handleClick2}>
-        <div className="card">
+        <div className="cardr">
           <div className="front">
             <img src={vission} alt="services" />
           </div>

@@ -3,10 +3,17 @@ import Navbar from './components/Nav';
 import './App.css';
 import Home from './components/pages/Home';
 import { BrowserRouter as Router,Route,Switch} from 'react-router-dom';
-import Contact from './components/pages/Contact';
+import contact from './components/contact';
 import Signup from './components/pages/Signup';
 // import Session from './components/session';
 import AboutUs from './components/pages/About';
+import Services from './components/pages/Services';
+import DM from './components/DM';
+import UI from './components/ui';
+import Webs from './components/Web';
+import Pro from './components/Pro';
+import Content from './components/Content';
+import Ecom from './components/Ecom';
 
 function App() {
   return (
@@ -16,9 +23,19 @@ function App() {
         <Switch>
           <Route path='/' exact component={Home}/>
            <Route path='/AboutUs' component={AboutUs} />
-          <Route path='/Contact' component={Contact} />
-          {/* //  <Route path='/' component={Contact} /> */}
+          <Route path='/contact' component={contact} />
+           <Route path='/Services' component={Services} />
           <Route path='/Signup' component={Signup} />
+          <Route path='/DM' component={DM}/>
+          <Route path='/UI' component={UI}/>
+          <Route path='/Webs' component={Webs}/>
+          <Route path='/Pro' component={Pro}/>
+          <Route path='/Content' component={Content}/>
+          <Route path='/Ecom' component={Ecom}/>
+
+          
+
+          
         </Switch>
       </Router>
     </>

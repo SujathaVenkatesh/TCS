@@ -5,19 +5,22 @@
   --color: #9176FF;
   --bg-color: #f4f4f4;
 }
-.swiper-heading{
-    color: black;
-    text-align: center;
+
+.swiper-heading {
+  color: black;
+  text-align: center;
 }
-.swiper{
-text-align: center;}
+
+.swiper {
+  text-align: center;
+}
+
 .swiper-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   padding: 10px;
 }
-
 
 .cardname {
   width: 100%;
@@ -29,14 +32,27 @@ text-align: center;}
   display: flex;
   align-items: center;
   flex-direction: column;
-  
+  animation: borderAnimation 1s ease-in-out forwards;
+}
+
+@keyframes borderAnimation {
+  0% {
+    transform: scale(0.8);
+    box-shadow: 0 0 2em rgba(0, 0, 0, 0.2);
+    border-color: var(--color);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 2em rgba(0, 0, 0, 0.4);
+    border-color: orange;
+  }
 }
 
 .card__image {
   width: 10em;
   height: 10em;
   border-radius: 50%;
-  border: 5px solid var(--color);
+  border: 5px solid orange; /* Update border color to orange */
   padding: 3px;
   margin-bottom: 2em;
 }
@@ -72,7 +88,7 @@ text-align: center;}
 }
 
 .card__btn {
-  background-color: var(--color);
+  background-color: orange;
   color: #fff;
   font-size: 1rem;
   text-transform: uppercase;
@@ -83,6 +99,7 @@ text-align: center;}
   margin-top: 0.5em;
   cursor: pointer;
 }
+
 .animated-card {
   opacity: 0;
   transform: translateY(50%);
@@ -119,6 +136,7 @@ text-align: center;}
   object-fit: contain;
   cursor: pointer;
 }
+
 @media only screen and (max-width: 767px) {
   .swiper-wrapper {
     grid-template-columns: repeat(1, 1fr);

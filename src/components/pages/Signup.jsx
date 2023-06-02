@@ -1,15 +1,40 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Signup.css';
 import loginlogo from '../images/loginlogo.jpg';
-import { FaApple, FaGoogle} from 'react-icons/fa';
+import { FaApple, FaGoogle } from 'react-icons/fa';
 
 function Signup() {
+  const [signedIn, setSignedIn] = useState(false);
+
+  const handleSignIn = (event) => {
+    event.preventDefault(); // Prevent form submission (optional)
+
+    // Simulating sign-in process
+    const email = event.target.elements.email.value;
+    const password = event.target.elements.password.value;
+
+    // Check if email and password are valid (example)
+    if (email === 'example@gmail.com' && password === 'password') {
+      setSignedIn(false); // Set signedIn state to true
+    }
+  };
+
+  const handleContinue = () => {
+    // Do something when continue button is clicked
+    // You can add the desired logic here, such as navigating to another page
+  };
+
+  const handleGoogleSignIn = () => {
+    // Simulating the sign-in process with Google
+    window.location.href = 'https://accounts.google.com'; // Redirect to Google sign-in page
+  };
+
   return (
     <div className='form_wrapper'>
-      <form className='form_container'>
+      <form className='form_container' onSubmit={handleSignIn}>
         <div className='title_container'>
-        <div className='logo_container'>
-        <img src={loginlogo} className='logo' alt='' />
+          <div className='logo_container'>
+            <img src={loginlogo} className='logo' alt='' />
           </div>
           <p className='title'>Login to your account</p>
           <span className='subtitle'>
@@ -21,13 +46,12 @@ function Signup() {
             Email
           </label>
           <svg className='icon' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'>
-            <path d='find the full path on my github' />
-            <path d='find the full path on my github' />
+            {/* Rest of your code */}
           </svg>
           <input
             placeholder='name@gmail.com'
             title='name_title'
-            name='input-name'
+            name='email'
             type='text'
             className='input_field'
             id='email_field'
@@ -38,14 +62,12 @@ function Signup() {
             Password
           </label>
           <svg className='icon' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'>
-            <path d='find the full path on my github' />
-            <path d='find the full path on my github' />
-            <path fill='#141B34' d='find the full path on my github' />
+            {/* Rest of your code */}
           </svg>
           <input
             placeholder='Password'
             title='password_title'
-            name='input-password'
+            name='password'
             type='password'
             className='input_field'
             id='password_field'
@@ -59,19 +81,24 @@ function Signup() {
           <span>or</span>
           <hr className='line' />
         </div>
-        <button title='sign in' type='submit' className='sign-in_ggl'>
-          <FaGoogle/>
+        <button title='sign in' type='button' className='sign-in_ggl' onClick={handleGoogleSignIn}>
+          <FaGoogle />
           <span>Sign In with Google</span>
         </button>
-      
-       
         <button title='sign in' type='submit' className='sign-in_ggl'>
-          <FaApple/>
+          <FaApple />
           <span>Sign In with Apple</span>
         </button>
         <p className='note'>Terms of use &amp; Conditions</p>
-
       </form>
+      {signedIn && (
+        <div className='signed-in-container'>
+          <p className='welcome-message'>Thank you and welcome to our team!</p>
+          <button title='continue' type='button' className='continue-btn' onClick={handleContinue}>
+            Continue
+          </button>
+        </div>
+      )}
     </div>
   );
 }

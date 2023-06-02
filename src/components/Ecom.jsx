@@ -1,8 +1,8 @@
 import React from 'react';
-import './DM.css';
-import digi from './images/digi.jpg';
+import './Ecom.css';
+import ecom from './images/ecom.jpg';
 
-function DM() {
+function Ecom() {
   return (
     <>
       <div className="nameg">
@@ -13,7 +13,7 @@ function DM() {
 
         <div className="about-us-content">
           <div className="image-container">
-            <img src={digi} alt="Company Image" className="company-image" />
+            <img src={ecom} alt="CompanyImage" className="company-image" />
           </div>
           <div className="content-container">
             <p>
@@ -27,4 +27,4 @@ In the realm of Digital Marketing, businesses employ tactics like search engine 
   );
 }
 
-export default DM;
+export default Ecom;

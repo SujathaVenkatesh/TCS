@@ -14,7 +14,7 @@ function Cards() {
 <hr></hr>
 
       <div className="cards-container">
-        <div className="card">
+        <div className="cards">
           <img src={tcsimg4} className="w-100 border-bottom" alt="Services" />
           <div className="card-content">
             <p className="card-description">The battle of big vs small data</p>
@@ -23,7 +23,7 @@ function Cards() {
             READ MORE
           </a>
         </div>
-        <div className="card">
+        <div className="cards">
           <img src={img2} className="w-100 border-bottom" alt="Services" />
           <div className="card-content">
             <p className="card-description">AI joins hands with health</p>
@@ -34,7 +34,7 @@ function Cards() {
           </div>
 
         </div>
-        <div className="card">
+        <div className="cards">
           <img src={tcss2} className="w-100 border-bottom" alt="Services" />
           <div className="card-content">
             <p className="card-description">Linking all the moving parts</p>
