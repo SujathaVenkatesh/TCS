@@ -31,7 +31,7 @@
     grid-area: info;
     padding: 40px;
     background-color: #fff;
-    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 5px 35px orange(0, 0, 0, 0.15);
   }
   
   .map {
@@ -85,7 +85,7 @@
   
   .inputBox input[type="submit"] {
     background-color: #ff578b;
-    color: #fff;
+    color: black;
     border: none;
     font-size: 1.1em;
     max-width: 120px;
@@ -97,7 +97,7 @@
     color: #fff;
   }
   .info{
-    background-color: #0e3959;
+    background-color: orange;
   }
   .info h3{
     color: #fff;
@@ -141,9 +141,9 @@
    margin-right: 15px;
 }
 .sci li a{
-    color: #fff;
+    color: black;
     font-size: 2 em;
-    color: #ccc;
+    color: black;
 
 }
 .sci li a:hover{

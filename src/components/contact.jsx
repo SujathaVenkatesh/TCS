@@ -1,8 +1,37 @@
-import React from 'react';
+import React, { useRef,useState } from "react";
 import './contact.css';
 import { FaLinkedin, FaTwitter, FaFacebook } from 'react-icons/fa';
+import { MdOutlineEmail } from "react-icons/md";
+import { RiMessengerLine } from "react-icons/ri";
+import { RiWhatsappLine } from "react-icons/ri";
+import emailjs from "emailjs-com";
 
 function Contact() {
+  const formRef = useRef(null);
+  const [isSent, setIsSent] = useState(false); // State variable to track sent status
+
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs
+    .sendForm(
+      "service_fc97lhh",
+      "template_t2rzjwf",
+      formRef.current,
+      "n50L2fRrrahr6c-HI"
+    )
+    .then(
+      (result) => {
+        console.log(result.text);
+        setIsSent(true); // Set the sent status to true
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
+
+    e.target.reset();
+  }
   return (
     <div className="contactUs">
       <div className="title">
@@ -11,7 +40,7 @@ function Contact() {
       <div className="box">
         <div className="form">
           <h1>Send a Message</h1>
-          <form>
+          <form ref={formRef} onSubmit={sendEmail}>
             <div className="formBox">
               <div className="row50">
                 <div className="inputBox">
@@ -49,21 +78,22 @@ function Contact() {
         <div className="info">
           <h3>Contact Info</h3>
           <div className="infoBox">
-            <div>
-              <span><i className="fa fa-map-marker"></i></span>
-              <p>
-                No. 4th Floor, Elcanso Apartments 9/10, Tamizh Salai,
-                CASA Major Rd, Egmore, Chennai, Tamil Nadu 600008
-              </p>
-            </div>
-            <div>
-              <span><i className="fa fa-envelope"></i></span>
-              <a href="mailto:vsujathavsujatha0968@gmail.com">vsujathavsujath0968@gmail.com</a>
-            </div>
-            <div>
-              <span><i className="fa fa-phone"></i></span>
-              <a href="tel:+917904544228">+91 7904544228</a>
-            </div>
+          <div className={`contact__option ${isSent ? "sent" : ""}`}>
+    <h2> <MdOutlineEmail/>Gmail</h2>
+    <h3>vsujathavsujatha0968@gmail.com</h3>
+    <a href="mailto:vsujathavsujatha0968@gmail.com">Send a message</a>
+  </div>
+  <div className={`contact__option ${isSent ? "sent" : ""}`}>
+    <h2><RiMessengerLine />Messenger</h2>
+    <h3>Why Global Services</h3>
+    <a href="https://m.me">Send a message</a>
+  </div>
+  <div className={`contact__option ${isSent ? "sent" : ""}`}>
+    <h2><RiWhatsappLine/>Contact</h2>
+    <h3>+91 86672 79822</h3>
+    <a href="https://api.whatsapp.com/send?phone=917904544228">Send a message</a>
+  </div>
+</div>
             <ul className="sci">
               <li>
                 <a href="https://www.facebook.com/whyglobal/" alt="names">
@@ -101,7 +131,6 @@ function Contact() {
           ></iframe>
         </div>
       </div>
-    </div>
   );
 }
 
