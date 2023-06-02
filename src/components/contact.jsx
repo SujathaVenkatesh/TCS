@@ -5,6 +5,7 @@ import { MdOutlineEmail } from "react-icons/md";
 import { RiMessengerLine } from "react-icons/ri";
 import { RiWhatsappLine } from "react-icons/ri";
 import emailjs from "emailjs-com";
+import Footer from './Footer';
 
 function Contact() {
   const formRef = useRef(null);
@@ -33,11 +34,19 @@ function Contact() {
     e.target.reset();
   }
   return (
+    <>
     <div className="contactUs">
       <div className="title">
         <h2>Get in Touch</h2>
       </div>
       <div className="box">
+      <div className="box">
+          {isSent ? ( // Conditional rendering based on the sent status
+            <div className="thankYouMessage">
+              <h1>Thank you for your message!</h1>
+              <p>We appreciate your time.</p>
+            </div>
+          ) : (
         <div className="form">
           <h1>Send a Message</h1>
           <form ref={formRef} onSubmit={sendEmail}>
@@ -74,25 +83,38 @@ function Contact() {
               </div>
             </div>
           </form>
-        </div>
+        </div>        
+          )}
         <div className="info">
-          <h3>Contact Info</h3>
+          <center>
+          <h1>Contact Info</h1>
+          </center>
+          <hr></hr>
+          <br></br>
+          <div className="contact__container">
+      <div className="contact__options">
           <div className="infoBox">
           <div className={`contact__option ${isSent ? "sent" : ""}`}>
     <h2> <MdOutlineEmail/>Gmail</h2>
     <h3>vsujathavsujatha0968@gmail.com</h3>
     <a href="mailto:vsujathavsujatha0968@gmail.com">Send a message</a>
   </div>
+  <br></br>
+  <br></br>
   <div className={`contact__option ${isSent ? "sent" : ""}`}>
     <h2><RiMessengerLine />Messenger</h2>
     <h3>Why Global Services</h3>
     <a href="https://m.me">Send a message</a>
   </div>
+  <br></br>
+  <br></br>
   <div className={`contact__option ${isSent ? "sent" : ""}`}>
     <h2><RiWhatsappLine/>Contact</h2>
     <h3>+91 86672 79822</h3>
     <a href="https://api.whatsapp.com/send?phone=917904544228">Send a message</a>
   </div>
+</div>
+</div>
 </div>
             <ul className="sci">
               <li>
@@ -123,15 +145,19 @@ function Contact() {
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15545.769417185833!2d80.23583389059625!3d13.07112774757432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526672b30ccb71%3A0xb24303aa60c7e198!2sElcanso%20Complex%2C%20CASA%20Major%20Rd%2C%20Egmore%2C%20Chennai%2C%20Tamil%20Nadu%20600008!5e0!3m2!1sen!2sin!4v1685674802067!5m2!1sen!2sin"
             title="Google Maps"
             width="600"
-            height="450"
+            height="600"
             style={{ border: 0 }}
-            allowFullScreen=""
+            allowFullScreen="YES"
             loading="medium"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
       </div>
-  );
-}
+      </div>
+      <Footer/>
+      </>
+      );
+  }
+
 
 export default Contact;
