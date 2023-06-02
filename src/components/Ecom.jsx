@@ -5,10 +5,10 @@ import ecom from './images/ecom.jpg';
 function Ecom() {
   return (
     <>
-      <div className="nameg">
+      <div className="namei">
       </div>
       <div className="about-us-container">
-        <h1 className="headp">Digital Marketing</h1>
+        <h1 className="headp">E Commerce</h1>
         <hr className="horizontal-line" />
 
         <div className="about-us-content">

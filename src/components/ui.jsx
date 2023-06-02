@@ -9,6 +9,7 @@ function UI() {
       <div className="namev">
       </div>
       <div className="about-us-container">
+        
         <h1 className="headp">UI Designer</h1>
         <hr className="horizontal-line" />
 

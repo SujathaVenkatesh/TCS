@@ -102,7 +102,7 @@ function Services() {
           </p>
           <div className="text-center">
           <button className="link-button animated-button" >
-               <Link to="/">ReadMore</Link></button>
+               <Link to="/Ecom">ReadMore</Link></button>
           </div>
         </div>
       </div>

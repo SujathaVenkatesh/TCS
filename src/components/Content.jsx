@@ -6,7 +6,7 @@ import cont2 from './images/cont2.jpg';
 function Content() {
   return (
     <>
-      <div className="nameg">
+      <div className="nameo">
       </div>
       <div className="about-us-container">
         <h1 className="headp">Content Development</h1>
