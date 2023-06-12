@@ -1,4 +1,4 @@
-import React, { useRef,useState } from "react";
+import React, { useRef, useState } from "react";
 import './contact.css';
 import { FaLinkedin, FaTwitter, FaFacebook } from 'react-icons/fa';
 import { MdOutlineEmail } from "react-icons/md";
@@ -15,107 +15,102 @@ function Contact() {
     e.preventDefault();
 
     emailjs
-    .sendForm(
-      "service_fc97lhh",
-      "template_t2rzjwf",
-      formRef.current,
-      "n50L2fRrrahr6c-HI"
-    )
-    .then(
-      (result) => {
-        console.log(result.text);
-        setIsSent(true); // Set the sent status to true
-      },
-      (error) => {
-        console.log(error.text);
-      }
-    );
+      .sendForm(
+        "service_fc97lhh",
+        "template_t2rzjwf",
+        formRef.current,
+        "n50L2fRrrahr6c-HI"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setIsSent(true); // Set the sent status to true
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
 
     e.target.reset();
   }
+
   return (
     <>
-    <div className="contactUs">
-      <div className="title">
-        <h2>Get in Touch</h2>
-      </div>
-      <div className="box">
-      <div className="box">
-          {isSent ? ( // Conditional rendering based on the sent status
-            <div className="thankYouMessage">
-              <h1>Thank you for your message!</h1>
-              <p>We appreciate your time.</p>
+      <div className="contactUs">
+        <div className="box">
+          <div className="form">
+            {isSent ? (
+              <div className="thankYouMessage">
+                <h1>Thank you for your message!</h1>
+                <p>We appreciate your time.</p>
+              </div>
+            ) : (
+              <form ref={formRef} onSubmit={sendEmail}>
+                <h1>Send a Message</h1>
+                <div className="formBox">
+                  <div className="row50">
+                    <div className="inputBox">
+                      <span>First Name</span>
+                      <input type="text" placeholder="First Name" />
+                    </div>
+                    <div className="inputBox">
+                      <span>Last Name</span>
+                      <input type="text" placeholder="Last Name" />
+                    </div>
+                  </div>
+                  <div className="row50">
+                    <div className="inputBox">
+                      <span>Email ID</span>
+                      <input
+                        type="text"
+                        placeholder="vsujathavsujatha0968@gmail.com"
+                      />
+                    </div>
+                  </div>
+                  <div className="row100">
+                    <div className="inputBox">
+                      <span>Message</span>
+                      <textarea placeholder="Write Your Message Here..."></textarea>
+                    </div>
+                  </div>
+                  <div className="row100">
+                    <div className="inputBox">
+                      <input type="submit" value="Send" />
+                    </div>
+                  </div>
+                </div>
+              </form>
+            )}
+          </div>
+          <div className="info">
+            <center>
+              <h1>Contact Info</h1>
+            </center>
+            <hr />
+            <br />
+            <div className="contact__container">
+              <div className="contact__options">
+                <div className={`contact__option ${isSent ? "sent" : ""}`}>
+                  <h2> <MdOutlineEmail/>Gmail</h2>
+                  <h3>vsujathavsujatha0968@gmail.com</h3>
+                  <a href="mailto:vsujathavsujatha0968@gmail.com">Send a message</a>
+                </div>
+                <br />
+                <br />
+                <div className={`contact__option ${isSent ? "sent" : ""}`}>
+                  <h2><RiMessengerLine />Messenger</h2>
+                  <h3>Why Global Services</h3>
+                  <a href="https://m.me">Send a message</a>
+                </div>
+                <br />
+                <br />
+                <div className={`contact__option ${isSent ? "sent" : ""}`}>
+                  <h2><RiWhatsappLine/>Contact</h2>
+                  <h3>+91 86672 79822</h3>
+                  <a href="https://api.whatsapp.com/send?phone=917904544228">Send a message</a>
+                </div>
+              </div>
             </div>
-          ) : (
-        <div className="form">
-          <h1>Send a Message</h1>
-          <form ref={formRef} onSubmit={sendEmail}>
-            <div className="formBox">
-              <div className="row50">
-                <div className="inputBox">
-                  <span>First Name</span>
-                  <input type="text" placeholder="First Name" />
-                </div>
-                <div className="inputBox">
-                  <span>Last Name</span>
-                  <input type="text" placeholder="Last Name" />
-                </div>
-              </div>
-              <div className="row50">
-                <div className="inputBox">
-                  <span>Email ID</span>
-                  <input
-                    type="text"
-                    placeholder="vsujathavsujatha0968@gmail.com"
-                  />
-                </div>
-              </div>
-              <div className="row100">
-                <div className="inputBox">
-                  <span>Message</span>
-                  <textarea placeholder="Write Your Message Here..."></textarea>
-                </div>
-              </div>
-              <div className="row100">
-                <div className="inputBox">
-                  <input type="submit" value="Send" />
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>        
-          )}
-        <div className="info">
-          <center>
-          <h1>Contact Info</h1>
-          </center>
-          <hr></hr>
-          <br></br>
-          <div className="contact__container">
-      <div className="contact__options">
-          <div className="infoBox">
-          <div className={`contact__option ${isSent ? "sent" : ""}`}>
-    <h2> <MdOutlineEmail/>Gmail</h2>
-    <h3>vsujathavsujatha0968@gmail.com</h3>
-    <a href="mailto:vsujathavsujatha0968@gmail.com">Send a message</a>
-  </div>
-  <br></br>
-  <br></br>
-  <div className={`contact__option ${isSent ? "sent" : ""}`}>
-    <h2><RiMessengerLine />Messenger</h2>
-    <h3>Why Global Services</h3>
-    <a href="https://m.me">Send a message</a>
-  </div>
-  <br></br>
-  <br></br>
-  <div className={`contact__option ${isSent ? "sent" : ""}`}>
-    <h2><RiWhatsappLine/>Contact</h2>
-    <h3>+91 86672 79822</h3>
-    <a href="https://api.whatsapp.com/send?phone=917904544228">Send a message</a>
-  </div>
-</div>
-</div>
-</div>
             <ul className="sci">
               <li>
                 <a href="https://www.facebook.com/whyglobal/" alt="names">
@@ -153,11 +148,9 @@ function Contact() {
           ></iframe>
         </div>
       </div>
-      </div>
       <Footer/>
-      </>
-      );
-  }
-
+    </>
+  );
+}
 
 export default Contact;

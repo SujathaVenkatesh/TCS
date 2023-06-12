@@ -1,207 +1,168 @@
 .contactUs {
-    position: relative;
-    width: 100%;
-    padding: 40px 100px;
-  }
-  
-  .contactUs .title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-  }
-  
-  .contactUs .title h2 {
-    color: orange;
-    font-weight: 500;
-  }
-  
-  .box {
-    position: relative;
-  }
-  
-  .form {
-    grid-area: form;
-    padding: 40px;
-    background-color: #fff;
-    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
-  }
-  
-  .info {
-    grid-area: info;
-    padding: 40px;
-    background-color: #fff;
-    box-shadow: 0 5px 35px orange(0, 0, 0, 0.15);
-
-  }
-  
-  .map {
-    grid-area: map;
-  }
-  
-  .contact h3 {
-    color: orange;
-    font-weight: 500;
-    font-size: 1.4rem;
-    margin-bottom: 10px;
-  }
-  
-  .formBox {
-    position: relative;
-    width: 100%;
-  }
-  
-  .formBox .row50 {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .inputBox {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
-    width: 100%;
-  }
-  
-  .formBox .row100 .inputBox {
-    width: 100%;
-  }
-  
-  .inputBox span {
-    color: orange;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    font-weight: 500;
-  }
-  
-  .inputBox input {
-    padding: 10px;
-    font-size: 1.1rem;
-    outline: none;
-    border: 1px solid #333;
-    resize: none;
-    min-height: 40px;
-    margin-bottom: 10px;
-  }
-  
-  .inputBox input[type="submit"] {
-    background-color: #ff578b;
-    color: black;
-    border: none;
-    font-size: 1.1em;
-    max-width: 120px;
-    font-weight: 500;
-    cursor: pointer;
-    padding: 14px 15px;
-  }
-  .inputBox ::placeholder{
-    color: #fff;
-  }
-  .info{
-    background-color: purple;
-    margin-bottom: 10px;
-    grid: 1.5 em;
-    display:grid;
-    grid-template-columns: 2;
-    align-items: flex-start;
-  }
-  .info h3{
-    color: #fff;
-  }
-  .info .inputBox div{
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-.info .inputBox div span{
-
-    min-width:40px;
-    height: 40px;
-    color: #fff;
-    background-color:lightsalmon;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5 em;
-    border-radius: 100%;
-    margin-right: 15px;
-  
+  display: flex;
+  padding: 40px 100px;
 }
-.info .inputBox div p{
 
-    color: #fff;
-    font-size: 1.1em;
+.box {
+  display: flex;
+  flex-grow: 1;
+}
+
+.form {
+  flex: 1;
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
+}
+
+.info {
+  flex: 1;
+  padding: 40px;
+  background-color: purple;
+  color: #fff;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.map {
+  flex: 1;
+  padding: 0;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.contact h3 {
+  color: orange;
+  font-weight: 500;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.formBox {
+  position: relative;
+  width: 100%;
+}
+
+.formBox .row50 {
+  display: flex;
+  gap: 20px;
+}
+
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.formBox .row100 .inputBox {
+  width: 100%;
+}
+
+.inputBox span {
+  color: orange;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.inputBox input {
+  padding: 10px;
+  font-size: 1.1rem;
+  outline: none;
+  border: 1px solid #333;
+  resize: none;
+  min-height: 40px;
+  margin-bottom: 10px;
+}
+
+.inputBox input[type="submit"] {
+  background-color: #ff578b;
+  color: black;
+  border: none;
+  font-size: 1.1em;
+  max-width: 120px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 14px 15px;
+}
+
+.inputBox ::placeholder {
+  color: #fff;
+}
+
+.info .inputBox div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.info .inputBox div span {
+  min-width: 40px;
+  height: 40px;
+  color: #fff;
+  background-color: lightsalmon;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  border-radius: 100%;
+  margin-right: 15px;
+}
+
+.info .inputBox div p {
+  color: #fff;
+  font-size: 1.1em;
 }
 
 .info .inputBox div a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.1 em;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1em;
 }
-.sci{
+
+.sci {
   margin-top: 40px;
-   display: flex;
-   margin-right: 190px;
-
+  display: flex;
+  margin-right: 190px;
 }
-.sci li{
-   list-style: none;
-   margin-right: 15px;
+
+.sci li {
+  list-style: none;
+  margin-right: 15px;
 }
-.sci li a{
-    color: black;
-    font-size: 2 em;
-    color: black;
 
+.sci li a {
+  color: black;
+  font-size: 2em;
+  color: black;
 }
-.sci li a:hover{
 
-    color:#fff;
-} 
-.map{
-    padding:0;
-    height: 30%;
-    width: 100%;
+.sci li a:hover {
+  color: #fff;
 }
-.map iframe{
-    width: 100%;
-    height: 100%;
+
+@media (max-width: 991px) {
+  .contactUs {
+    padding: 20px;
+  }
+
+  .box {
+    flex-direction: column;
+  }
+
+  .map {
+    min-height: 300px;
+    padding: 30px;
+  }
+
+  .form,
+  .info {
+    padding: 30px;
+  }
 }
-@media (max-width:991){
-    .contactUs{
-        padding: 20px;
-
-    }
-    .box{
-        grid-template-columns:1 fr;
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "form"
-        "info"
-        "map";
-    }
-    .map{
-        min-height: 300px;
-
-    }
-    .formBox .row50{
-        display: flex;
-        gap:0;
-        flex-direction: column;
-
-
-    }
-    .inputBox   
-    {
-        width: 100%;
-    }
-    .contact
-    {
-        padding: 30px;
-    }
-    .map{
-        min-height: 300px;
-        padding: 30px;
-    }
-}
- 

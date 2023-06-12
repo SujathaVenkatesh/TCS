@@ -1,12 +1,22 @@
 .cardname {
-    position: relative;
-    width: 400px;
-    height: 450px;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  position: relative;
+  width: 400px;
+  height: 450px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer; /* Add cursor pointer to indicate interactivity */
+}
+
+.cardname:hover .front {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Change the box-shadow on hover */
+}
+
+.cardname:hover .back {
+  transform: rotateY(360deg); /* Rotate the back content on hover */
+}
+
   
   .cardr {
     position: relative;

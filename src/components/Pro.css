@@ -1,4 +1,4 @@
-.nameg {
+.namel {
     background: url('./images/product.png') center center/cover no-repeat;
     height: 80vh;
     width: 100%;
@@ -13,14 +13,14 @@
   
 
   
-  .nameg > h1 {
+  .namel > h1 {
     color: black;
     font-size: 50px;
     margin-top: -78px;
     margin-left: 70px;
   }
   
-  .nameg > p {
+  .namel > p {
     margin-top: 8px;
     color: white;
     font-size: 32px;
@@ -68,19 +68,19 @@
   }
   
   @media screen and (max-width: 768px) {
-    .nameg {
+    .namel {
       height: auto;
       padding: 50px 20px;
       text-align: center;
       align-items: center;
     }
   
-    .nameg > h1 {
+    .namel > h1 {
       font-size: 40px;
       margin-top: -15px;
     }
   
-    .nameg > p {
+    .namel > p {
       font-size: 25px;
     }
   

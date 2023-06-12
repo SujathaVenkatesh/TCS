@@ -5,7 +5,7 @@ import pro1 from './images/pro1.jpg';
 
 function Pro() {
   return (
-    <section id="names">
+    <section id="namel">
       <div className="nameg">
       </div>
       <div className="about-us-container">

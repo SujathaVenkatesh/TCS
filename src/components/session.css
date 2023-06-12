@@ -5,6 +5,7 @@
 
 .session-heading {
   color: white;
+  font-size: 24px;
 }
 
 .columns-container {
@@ -40,10 +41,10 @@
   font-size: 16px; /* Adjust button font size */
   cursor: pointer;
 }
-.heading {
-  margin-bottom: 1rem; 
-}
 
+.heading {
+  margin-bottom: 1rem;
+}
 
 .animated-button:hover {
   transform: scale(1.1);
@@ -56,4 +57,48 @@
 
 .animated-title:hover {
   opacity: 0.8;
+}
+
+.session-container {
+  background-color: black;
+  color: white;
+}
+
+.session-heading,
+.heading,
+.animated-heading {
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  margin-right: 20px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animated-heading {
+  animation-delay: 0.5s;
+  animation-name: fadeIn;
+  margin-right: 10px;
+}
+
+.animated-heading:first-child {
+  animation-delay: 0.3s;
+}
+
+.animated-heading:last-child {
+  animation-delay: 0.7s;
+}
+
+.animated-heading p {
+  animation-delay: 1s;
+  animation-name: fadeIn;
 }

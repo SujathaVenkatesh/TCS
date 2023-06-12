@@ -1,6 +1,8 @@
 import React from 'react';
 import Slider2 from '../Slider2';
 import './About.css';
+import Portfolio from '../portfolio';
+import Depart from '../depart';
 
 import Footer from '../Footer';
 import History from '../History';
@@ -58,6 +60,9 @@ const AboutUs = () => {
         </div>
       </div>
       <History/>
+      
+      <Portfolio/>
+      <Depart/>
       <Footer />
     </>
   );

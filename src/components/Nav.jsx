@@ -44,7 +44,11 @@ function Navbar() {
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
             <img src={logo6} className='logo' alt='Logo' />
-            <h1>Why Global Services</h1>
+            <div className="footer-left">
+        <h2>
+          Why <span>Global Services</span>
+        </h2>
+        </div>
           </Link>
 
           <div className='menu-icon' onClick={handleClick}>
