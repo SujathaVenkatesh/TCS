@@ -9,10 +9,6 @@ function Cards() {
   return (
     <div>
       <h1 className="cards-heading">Insights of interest</h1>
-      {/* <a href="#" className="vertical-line">View All</a> */}
-
-<hr></hr>
-
       <div className="cards-container">
         <div className="cards">
           <img src={tcsimg4} className="w-100 border-bottom" alt="Services" />

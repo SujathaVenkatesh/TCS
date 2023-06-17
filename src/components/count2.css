@@ -1,0 +1,112 @@
+.containerp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+}
+
+.hps {
+  color: orange;
+}
+.left-sidep {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: stretch; /* Added to make the image cover the full height */
+}
+
+.left-image {
+  width: 200%;
+  object-fit: cover; /* Added to make the image cover the full width and height */
+}
+
+
+.left-sidep {
+  margin-right: 20px;
+  background-color: black;
+  color: white;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.left-image {
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+}
+
+.cardp {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  max-width: 300px;
+}
+
+.card-text {
+  margin: 0;
+  font-size: 24px;
+}
+
+.right-sidep {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: black;
+  color: white;
+  flex: 1;
+}
+
+.counterp h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.iconsp {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.iconp {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.icon-animation {
+  font-size: 64px;
+  color: white;
+  margin-bottom: 10px;
+  margin-right: 10px; 
+}
+
+.pppkd {
+  margin-right: 20px;
+}
+
+.iconp p {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.icon-number {
+  font-size: 36px;
+  font-weight: bold;
+  color: orange;
+  margin-top: 5px;
+}

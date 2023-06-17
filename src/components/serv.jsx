@@ -71,25 +71,27 @@ const Serv = () => {
             <h4 className="hd"><strong>Read more</strong></h4>
           </div>
           <div className="itemsa">
-            <img id="im2" className="product-development-image" src={imge2} alt="Service 2" />
-            <h5 className="hdd"><b>PRODUCT DEVELOPMENT</b></h5>
-            <h4 className="hd"><strong>Read More</strong></h4>
-          </div>
+  <img id="im2" className="product-development-image" src={imge2} alt="Service 2" />
+  <h5 className="hdd"><b>PRODUCT DEVELOPMENT</b></h5>
+  <h4 className="hd"><strong>Read More</strong></h4>
+</div>
+
+<div className="itemsa">
+  <img id="im3" className="e-commerce-image" src={imge1} alt="Service 2" />
+  <h5 className="hdds"><b>E-COMMERCE</b></h5>
+  <h4 className="hd"><strong>Read More</strong></h4>
+</div>
+
+<div className="itemsa">
+  <img id="im4" className="digital-marketing-image" src={imge4} alt="Service 4" />
+  <h5 className="hdda"><b>DIGITAL MARKETING</b></h5>
+  <h4 className="hd"><strong>Read More</strong></h4>
+</div>
           <div className="itemsa">
-            <img id="im3" src={imge1} alt="Service 2" />
-            <h5 className="hdds"><b>E -COMMERCE</b></h5>
-            <h4 className="hd"><strong>Read More</strong></h4>
-          </div>
-          <div className="itemsa">
-            <img id="im4" src={imge4} alt="Service 4" />
-            <h5 className="hdda"><b>DIGITAL MARKETING</b></h5>
-            <h4 className="hd"><strong>Read More</strong></h4>
-          </div>
-          <div className="itemsa">
-            <img id="im5" className="content-image" src={imge5} alt="Service 5" />
-            <h5 className="hdd"><b>CONTENT DEVELOPMENT</b></h5>
-            <h4 className="hd"><strong>Read More</strong></h4>
-          </div>
+  <img id="im5" className="content-development-image" src={imge5} alt="Service 5" />
+  <h5 className="hdd"><b>CONTENT DEVELOPMENT</b></h5>
+  <h4 className="hd"><strong>Read More</strong></h4>
+</div>
         </div>
       </div>
       <div className="m-4">

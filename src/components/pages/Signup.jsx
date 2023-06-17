@@ -15,7 +15,7 @@ function Signup() {
 
     // Check if email and password are valid (example)
     if (email === 'example@gmail.com' && password === 'password') {
-      setSignedIn(false); // Set signedIn state to true
+      setSignedIn(true); // Set signedIn state to true
     }
   };
 
@@ -30,10 +30,10 @@ function Signup() {
   };
 
   return (
-    <div className='form_wrapper'>
-      <form className='form_container' onSubmit={handleSignIn}>
-        <div className='title_container'>
-          <div className='logo_container'>
+    <div className='form_wrappers'>
+      <form className='form_containersd' onSubmit={handleSignIn}>
+        <div className='title_containerd'>
+          <div className='logos_containerd'>
             <img src={loginlogo} className='logo' alt='' />
           </div>
           <p className='title'>Login to your account</p>
@@ -76,16 +76,16 @@ function Signup() {
         <button title='sign up' type='submit' className='sign-in_btn'>
           <span>Sign In</span>
         </button>
-        <div className='seperator'>
+        <div className='seperatored'>
           <hr className='line' />
           <span>or</span>
           <hr className='line' />
         </div>
-        <button title='sign in' type='button' className='sign-in_ggl' onClick={handleGoogleSignIn}>
+        <button title='sign in' type='button' className='signs-in_ggl' onClick={handleGoogleSignIn}>
           <FaGoogle />
           <span>Sign In with Google</span>
         </button>
-        <button title='sign in' type='submit' className='sign-in_ggl'>
+        <button title='sign in' type='submit' className='signs-in_ggl'>
           <FaApple />
           <span>Sign In with Apple</span>
         </button>

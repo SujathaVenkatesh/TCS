@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect,useCallback } from "react";
 import "./sercon.css";
 
 const Sercon = () => {
@@ -23,7 +23,7 @@ const Sercon = () => {
     },
   ];
 
-  const rotateCircle = (direction) => {
+  const rotateCircle = useCallback((direction) => {
     setActiveIndex((prevIndex) => {
       let newIndex = prevIndex + direction;
       if (newIndex < 0) {
@@ -33,7 +33,15 @@ const Sercon = () => {
       }
       return newIndex;
     });
-  };
+  }, []);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      rotateCircle(1);
+    }, 3000);
+  
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="services">

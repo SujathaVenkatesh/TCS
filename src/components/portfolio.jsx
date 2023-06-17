@@ -37,7 +37,7 @@ const Portfolio = () => {
               github
             </a>
             <a
-              href="https://dribbble.com/Alien_pixels"
+              href="https://whytap.in/"
               className="btn btn-primary"
               target="_blank"
               rel="noopener noreferrer"
@@ -56,7 +56,7 @@ const Portfolio = () => {
               github
             </a>
             <a
-              href="https://dribbble.com/Alien_pixels"
+              href="https://wgsdev.whyglobalservices.com/"
               className="btn btn-primary"
               target="_blank"
               rel="noopener noreferrer"

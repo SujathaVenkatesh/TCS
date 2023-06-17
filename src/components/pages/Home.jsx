@@ -6,17 +6,23 @@ import Session from '../session';
 import Carousel from '../swiper';
 import Cards from '../Cards';
 import Serv from '../serv';
-import Sercon from '../sercon';
+// import Count from '../count2';
+import Testimonials from '../testimonials';
+// import Tech from '../Tech';
+// import Snap from '../snaps';
 // import Carluosel from '../caruosel';
 function Home() {
   return (
     <>
       <Slider />
       <Cards/>
+      {/* <Snap/> */}
+      {/* <Count/> */}
       <Serv/>
       <Session/> 
-      <Sercon/>
       <Carousel/> 
+      <Testimonials/>
+      {/* <Tech/> */}
 
       <Footer/>
 

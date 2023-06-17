@@ -8,7 +8,6 @@ function Session() {
     <section id="suja">
       <div className="session-container">
         <h1 className="session-heading animated-heading">WHO WE ARE</h1>
-        <hr />
 
         <div className="columns-container">
           <div className="column">
@@ -19,9 +18,8 @@ function Session() {
 
           <div className="column">
             <div className="about-content">
-              <h3 className="heading animated-heading">About Us</h3>
               <br />
-              <h1 className="animated-headings">We build greater futures<br />through innovation and<br />collective knowledge.</h1>
+              <h2 className="animated-headings">We build greater futures through innovation and collective knowledge.</h2>
               <br />
               <p className="animated-heading">
                 We enable businesses to embrace technologies and empower them to achieve their

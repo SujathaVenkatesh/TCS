@@ -3,9 +3,10 @@ import Slider2 from '../Slider2';
 import './About.css';
 import Portfolio from '../portfolio';
 import Depart from '../depart';
-
+import Counter from '../counter';
 import Footer from '../Footer';
 import History from '../History';
+// import Balls from '../balls';
 const AboutUs = () => {
   return (
     <>
@@ -60,7 +61,8 @@ const AboutUs = () => {
         </div>
       </div>
       <History/>
-      
+      {/* <Balls/> */}
+      <Counter/>
       <Portfolio/>
       <Depart/>
       <Footer />

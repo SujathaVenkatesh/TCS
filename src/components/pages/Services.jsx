@@ -6,14 +6,15 @@ import ui from '../images/u2.jpg';
 import product from '../images/product.png';
 import content from '../images/content.jpg';
 import ecom from '../images/ecom.jpg'
-import Slider3 from '../slider3';
 import Footer from '../Footer';
 import {Link} from 'react-router-dom';
+import Sercon from '../sercon';
+
 // import Webs from '../Web';
 function Services() {
   return (
     <>
-    <Slider3/>
+      <Sercon/>
     {/* <Webs/> */}
     <div className="about-us-container">
         <h1 className="head">Our Services</h1>

@@ -14,7 +14,7 @@ import Webs from './components/Web';
 import Pro from './components/Pro';
 import Content from './components/Content';
 import Ecom from './components/Ecom';
-
+import Portfolio from './components/portfolio';
 function App() {
   return (
     <>
@@ -32,6 +32,8 @@ function App() {
           <Route path='/Pro' component={Pro}/>
           <Route path='/Content' component={Content}/>
           <Route path='/Ecom' component={Ecom}/>
+          <Route path='/Portfolio' component={Portfolio}/>
+
 
           
 

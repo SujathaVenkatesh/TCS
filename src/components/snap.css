@@ -1,0 +1,62 @@
+.carouselm-sliderm {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Adjust the height as needed */
+    overflow: hidden;
+  }
+  
+  .carouselm-slidem {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  .carouselm-image {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease;
+  }
+  
+  .carouselm-image.active {
+    display: block;
+  }
+  
+  .circles-image {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+  }
+  
+  
+  .carouselm-image {
+    flex: 0 0 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .carouselm-image.active {
+    transform: translateX(0%);
+  }
+  
+  .carouselm-controls {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+  
+  .carouselm-controls button {
+    padding: 10px;
+    background-color: #ddd;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .carouselm-controls button:hover {
+    background-color: #ccc;
+  }
+  
