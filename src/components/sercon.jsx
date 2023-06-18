@@ -33,16 +33,18 @@ const Sercon = () => {
       }
       return newIndex;
     });
-  }, []);
-
+  }, [images.length]);
+  
   useEffect(() => {
     const interval = setInterval(() => {
       rotateCircle(1);
     }, 3000);
   
-    return () => clearInterval(interval);
-  }, []);
-
+    return () => {
+      clearInterval(interval);
+    };
+  }, [rotateCircle]);
+  
   return (
     <div className="services">
       <div className="circle--slider">
