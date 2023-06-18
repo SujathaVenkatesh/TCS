@@ -1,155 +1,110 @@
-import React, { useRef, useState } from "react";
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMapMarked, faEnvelope, faClock } from '@fortawesome/free-solid-svg-icons';
+import logo6 from './images/logo6.png';
 import './contact.css';
-import { FaLinkedin, FaTwitter, FaFacebook } from 'react-icons/fa';
-import { MdOutlineEmail } from "react-icons/md";
-import { RiMessengerLine } from "react-icons/ri";
-import { RiWhatsappLine } from "react-icons/ri";
-import emailjs from "emailjs-com";
-import Footer from './Footer';
+
+function ContactInfoItem({ icon, title, lines }) {
+  return (
+    <div className="contact-info-item">
+      <div className="contact-info-icon">
+        <FontAwesomeIcon icon={icon} size="3x" color="orange" />
+      </div>
+      <div className="contact-info-text">
+        <h2 className="text-center">{title}</h2>
+        {lines.map((line, index) => (
+          <span key={index}>{line}</span>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+
+function ContactForm() {
+  return (
+    <div className="contact-page-form">
+      <h2>
+        Get in Touch
+        <img src={logo6} className='logo' alt='Logo' />
+      </h2>
+      <form action="contact-mail.php" method="post">
+        <div className="row">
+          <div className="col-md-6 col-sm-6 col-xs-12">
+            <div className="single-input-field">
+              <input type="text" placeholder="Your Name" name="name" />
+            </div>
+          </div>
+          <div className="col-md-6 col-sm-6 col-xs-12">
+            <div className="single-input-field">
+              <input type="email" placeholder="E-mail" name="email" required />
+            </div>
+          </div>
+          <div className="col-md-12 message-input">
+            <div className="single-input-field">
+              <textarea placeholder="Write Your Message" name="message"></textarea>
+            </div>
+          </div>
+          <div className="single-input-fieldsbtn">
+            <input type="submit" value="Send Now" />
+          </div>
+        </div>
+      </form>
+    </div>
+  );
+}
+
+function GoogleMapsEmbed({ embedURL }) {
+  return (
+    <div className="contact-page-map">
+      <iframe src={embedURL} width="100%" height="450" frameBorder="0" style={{ border: 0 }} allowFullScreen title="Google Maps"></iframe>
+    </div>
+  );
+}
 
 function Contact() {
-  const formRef = useRef(null);
-  const [isSent, setIsSent] = useState(false); // State variable to track sent status
-
-  function sendEmail(e) {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_fc97lhh",
-        "template_t2rzjwf",
-        formRef.current,
-        "n50L2fRrrahr6c-HI"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setIsSent(true); // Set the sent status to true
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-
-    e.target.reset();
-  }
-
   return (
-    <>
-      <div className="contactUs">
-        <div className="box">
-          <div className="form">
-            {isSent ? (
-              <div className="thankYouMessage">
-                <h1>Thank you for your message!</h1>
-                <p>We appreciate your time.</p>
-              </div>
-            ) : (
-              <form ref={formRef} onSubmit={sendEmail}>
-                <h1>Send a Message</h1>
-                <div className="formBox">
-                  <div className="row50">
-                    <div className="inputBox">
-                      <span>First Name</span>
-                      <input type="text" placeholder="First Name" />
-                    </div>
-                    <div className="inputBox">
-                      <span>Last Name</span>
-                      <input type="text" placeholder="Last Name" />
-                    </div>
-                  </div>
-                  <div className="row50">
-                    <div className="inputBox">
-                      <span>Email ID</span>
-                      <input
-                        type="text"
-                        placeholder="vsujathavsujatha0968@gmail.com"
-                      />
-                    </div>
-                  </div>
-                  <div className="row100">
-                    <div className="inputBox">
-                      <span>Message</span>
-                      <textarea placeholder="Write Your Message Here..."></textarea>
-                    </div>
-                  </div>
-                  <div className="row100">
-                    <div className="inputBox">
-                      <input type="submit" value="Send" />
-                    </div>
-                  </div>
-                </div>
-              </form>
-            )}
-          </div>
-          <div className="info">
-            <center>
-              <h1>Contact Info</h1>
-            </center>
-            <hr />
-            <br />
-            <div className="contact__container">
-              <div className="contact__options">
-                <div className={`contact__option ${isSent ? "sent" : ""}`}>
-                  <h2> <MdOutlineEmail/>Gmail</h2>
-                  <h3>vsujathavsujatha0968@gmail.com</h3>
-                  <a href="mailto:vsujathavsujatha0968@gmail.com">Send a message</a>
-                </div>
-                <br />
-                <br />
-                <div className={`contact__option ${isSent ? "sent" : ""}`}>
-                  <h2><RiMessengerLine />Messenger</h2>
-                  <h3>Why Global Services</h3>
-                  <a href="https://m.me">Send a message</a>
-                </div>
-                <br />
-                <br />
-                <div className={`contact__option ${isSent ? "sent" : ""}`}>
-                  <h2><RiWhatsappLine/>Contact</h2>
-                  <h3>+91 86672 79822</h3>
-                  <a href="https://api.whatsapp.com/send?phone=917904544228">Send a message</a>
-                </div>
-              </div>
+    <section className="contact-page-sec">
+      <div className="container">
+        <div className="row">
+          <div className="col-md-4">
+            <div className="contact-info">
+              <ContactInfoItem
+                icon={faMapMarked}
+                title="address"
+                lines={['No:75,77 3rd Floor,Lohmanradhri Towers,Pantheon Road,Egmore,Chennai-18']}
+              />
             </div>
-            <ul className="sci">
-              <li>
-                <a href="https://www.facebook.com/whyglobal/" alt="names">
-                  <FaFacebook />
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/" alt="names">
-                  <FaLinkedin />
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/i/flow/login" alt="names">
-                  <FaTwitter />
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/i/flow/login" alt="names">
-                  <FaTwitter />
-                </a>
-              </li>
-            </ul>
+          </div>
+          <div className="col-md-4">
+            <div className="contact-info">
+              <ContactInfoItem
+                icon={faEnvelope}
+                title="E-mail"
+                lines={['whyglobalservices@gmail.com','whytap@gmail.com']}
+              />
+            </div>
+          </div>
+          <div className="col-md-4">
+            <div className="contact-info">
+              <ContactInfoItem
+                icon={faClock}
+                title="office time"
+                lines={['Mon - Fri 10.00 am - 6.30 pm', 'Sat  10.00 pm - 6.00 pm']}
+              />
+            </div>
           </div>
         </div>
-        <div className="map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15545.769417185833!2d80.23583389059625!3d13.07112774757432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526672b30ccb71%3A0xb24303aa60c7e198!2sElcanso%20Complex%2C%20CASA%20Major%20Rd%2C%20Egmore%2C%20Chennai%2C%20Tamil%20Nadu%20600008!5e0!3m2!1sen!2sin!4v1685674802067!5m2!1sen!2sin"
-            title="Google Maps"
-            width="600"
-            height="600"
-            style={{ border: 0 }}
-            allowFullScreen="YES"
-            loading="medium"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
+        <div className="row">
+          <div className="col-md-8">
+            <ContactForm />
+          </div>
+          <div className="col-md-4">
+          <GoogleMapsEmbed embedURL="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.4407720864688!2d80.25644627375347!3d13.071228212688832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52660dee8cf291%3A0x91e6aeae2606def2!2sLohmanradhri%20Towers%2C%20Pantheon%20Rd%2C%20Egmore%2C%20Chennai%2C%20Tamil%20Nadu%20600008!5e0!3m2!1sen!2sin!4v1687072745466!5m2!1sen!2sin" />
+          </div>
         </div>
       </div>
-      <Footer/>
-    </>
+    </section>
   );
 }
 
