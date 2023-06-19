@@ -16,11 +16,16 @@ function Home() {
     <>
       <Slider />
       <Cards/>
-      {/* <Snap/> */}
+
       {/* <Count/> */}
       <Serv/>
+
       <Session/> 
+
       <Carousel/> 
+      {/* <Snap/> */}
+
+
       <Testimonials/>
       {/* <Tech/> */}
 

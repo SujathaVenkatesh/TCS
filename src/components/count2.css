@@ -9,18 +9,35 @@
 .hps {
   color: orange;
 }
+
+.counterp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.iconsp .row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.large {
+  font-size: 36px;
+}
+
 .left-sidep {
   position: relative;
   flex: 1;
   display: flex;
-  align-items: stretch; /* Added to make the image cover the full height */
+  align-items: stretch;
 }
 
 .left-image {
   width: 200%;
-  object-fit: cover; /* Added to make the image cover the full width and height */
+  object-fit: cover;
 }
-
 
 .left-sidep {
   margin-right: 20px;
@@ -34,7 +51,7 @@
 .left-image {
   width: 100%;
   max-width: 300px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .cardp {
@@ -56,10 +73,12 @@
 .right-sidep {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center; /* Updated to center align the content horizontally */
+  justify-content: center; /* Updated to center align the content vertically */
   background-color: black;
   color: white;
   flex: 1;
+  padding: 20px;
 }
 
 .counterp h2 {
@@ -77,31 +96,31 @@
 
 .row {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 10px;
 }
 
 .iconp {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .icon-animation {
   font-size: 64px;
   color: white;
   margin-bottom: 10px;
-  margin-right: 10px; 
 }
 
 .pppkd {
-  margin-right: 20px;
+  margin-right: 0;
 }
 
 .iconp p {
   margin: 0;
   font-size: 18px;
   color: #333;
+  text-align: center;
 }
 
 .icon-number {
