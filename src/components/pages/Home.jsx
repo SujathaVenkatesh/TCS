@@ -11,6 +11,7 @@ import Testimonials from '../testimonials';
 // import Tech from '../Tech';
 // import Snap from '../snaps';
 // import Carluosel from '../caruosel';
+import './Home.css';
 function Home() {
   return (
     <>

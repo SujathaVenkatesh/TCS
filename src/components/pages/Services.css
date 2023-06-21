@@ -159,15 +159,15 @@
   display: inline-block;
   padding: 10px 20px;
   margin-top: 20px;
-  background-color: #007bff;
-  color: #fff;
+  background-color: white;
+  color: orange;
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s ease;
 }
 
 .link-button:hover {
-  background-color: white;
+  background-color: orange;
 }
 
 

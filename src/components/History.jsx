@@ -16,6 +16,10 @@ function History() {
   };
 
   return (
+    <>
+    <div class="history-session">
+    <video src="path/to/video.mp4" autoplay loop muted></video>
+    </div>
     <div className="card-container">
       <div className={`cardname ${isFlipped1 ? 'flipped' : ''}`} onClick={handleClick1}>
         <div className="cardr">
@@ -46,6 +50,7 @@ function History() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 

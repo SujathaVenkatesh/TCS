@@ -125,6 +125,25 @@
 .about-img img {
   max-width: 100%;
 }
+@media (max-width: 768px) {
+  .columns-container {
+    flex-direction: column;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  .about-img {
+    margin-bottom: 1.5rem;
+  }
+
+  .session-heading {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}
+
 
 .animated-heading:last-child {
   animation-delay: 0.7s;

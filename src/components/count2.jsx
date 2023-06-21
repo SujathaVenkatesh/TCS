@@ -1,49 +1,46 @@
-import React from 'react';
-import { FaCode, FaBriefcase, FaMoneyBill, FaUsers } from 'react-icons/fa';
-import CountUp from 'react-countup';
-import './count2.css'; // Import the CSS file for styling
+import React, { useState } from 'react';
+import './count2.css';
 
-import leftImage from './images/imge3.jpg'; // Replace 'leftImage.jpg' with your actual image file
+const TeamCard = () => {
+  const [expanded, setExpanded] = useState(false);
 
-const Count = () => {
+  const handleExpandClick = () => {
+    setExpanded(!expanded);
+  };
+
   return (
-    <div className="containerp">
-      <div className="left-sidep">
-        <img src={leftImage} alt="LeftImage" className="left-image" />
-      </div>
-      <div className="right-sidep">
-        <div className="counterp">
-          <CountUp
-            end={100}
-            duration={5}
-            suffix="%"
-            className="hps large"
-          />
-          <h2>Your Preferred Technology Partner</h2>
-        </div>
-        <div className="iconsp">
-          <div className="row">
-            <div className="iconp">
-              <FaMoneyBill className="icon-animation" />
-              <p>Reduction in IT costs for many of our clients</p>
-              <CountUp end={500} duration={5} suffix="+" className="icon-number" />
-            </div>
-            <div className="iconp">
-              <FaCode className="icon-animation" />
-              <p className="pppkd">Experience in the IT field</p>
-              <CountUp end={100} duration={5} suffix="+" className="icon-number" />
+    <div className="outer-div">
+      <div className="inner-div">
+        <div className={`team-card-1 ${expanded ? 'expand' : ''}`}>
+          <div
+            className={`image-card-1 ${expanded ? 'color-reveal' : ''}`}
+            style={{
+              background:
+                "linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9)), url('https://res.cloudinary.com/georgeassan/image/upload/v1564477808/xpDLrRKA_pqiddz.jpg')",
+              backgroundRepeat: 'no-repeat',
+              backgroundPosition: 'center',
+              backgroundSize: 'cover',
+            }}
+          >
+            <div className={`team-info ${expanded ? 'text-reduce' : ''}`}>
+              <p>Margaret Monroe</p>
+              <p>Lead Designer</p>
             </div>
           </div>
-          <div className="row">
-            <div className="iconp">
-              <FaBriefcase className="icon-animation" />
-              <p>Projects Delivered</p>
-              <CountUp end={412} duration={5} suffix="+" className="icon-number" />
+          <div className={`expand-btn-1`} onClick={handleExpandClick}>
+            <div className="left-bar"></div>
+            <div className="right-bar"></div>
+          </div>
+          <div className={`role-description ${expanded ? 'expand' : ''}`}>
+            <div className={`team-info-des ${expanded ? 'text-reveal-1' : ''}`}>
+              <p>Margaret Monroe</p>
+              <p>Lead Designer</p>
             </div>
-            <div className="iconp">
-              <FaUsers className="icon-animation" />
-              <p>Happy Clients</p>
-              <CountUp end={100} duration={5} suffix="+" className="icon-number" />
+            <div className="line"></div>
+            <div className={`body-text-1 ${expanded ? 'text-reveal-1' : ''}`}>
+              <p>
+                Our reigning Uno, Blackjack, paintball, karaoke champion.... Yup, the girl's good. Nothing stops Maggie M from giving us her best.
+              </p>
             </div>
           </div>
         </div>
@@ -52,4 +49,4 @@ const Count = () => {
   );
 };
 
-export default Count;
+export default TeamCard;

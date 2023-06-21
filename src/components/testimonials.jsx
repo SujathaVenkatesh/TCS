@@ -8,6 +8,10 @@ const SnippetCard = () => {
     flexDirection: 'column',
     alignItems: 'center',
     marginBottom: '20px',
+    backgroundColor: 'black',
+    color: 'white',
+    fontFamily: 'Raleway, Arial, sans-serif',
+    
   };
 
   const cardContainerStyle = {
@@ -81,6 +85,7 @@ const SnippetCard = () => {
     opacity: '0.8',
     margin: '0',
     fontWeight: '800',
+    color:'white',
   };
 
   const spanStyle = {
@@ -133,8 +138,9 @@ const SnippetCard = () => {
     fontSize: '24px',
     fontWeight: 'bold',
     marginBottom: '20px',
-    color: 'black',
+    color: 'white',
     fontFamily: 'Raleway, Arial, sans-serif',
+    marginRight:'10px',
   };
 
   const handleNextSlide = useCallback(() => {

@@ -77,11 +77,9 @@ function Signup() {
           <span>Sign In</span>
         </button>
         <div className='seperatored'>
-          <hr className='line' />
           <span>or</span>
-          <hr className='line' />
         </div>
-        <button title='sign in' type='button' className='signs-in_ggl' onClick={handleGoogleSignIn}>
+        <button title='sign in' type='button' className='signs-in_ggls' onClick={handleGoogleSignIn}>
           <FaGoogle />
           <span>Sign In with Google</span>
         </button>
