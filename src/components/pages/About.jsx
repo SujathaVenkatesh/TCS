@@ -2,9 +2,10 @@ import React from 'react';
 import Slider2 from '../Slider2';
 import './About.css';
 import Portfolio from '../portfolio';
-import Depart from '../depart';
 import Counter from '../counter';
 import Footer from '../Footer';
+import CircleMenu from '../Circlebar';
+
 import History from '../History';
 // import Balls from '../balls';
 const AboutUs = () => {
@@ -61,10 +62,12 @@ const AboutUs = () => {
         </div>
       </div>
       <History/>
+      <CircleMenu />
+
       {/* <Balls/> */}
       <Counter/>
       <Portfolio/>
-      <Depart/>
+
       <Footer />
     </>
   );

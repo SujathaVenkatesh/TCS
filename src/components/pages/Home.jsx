@@ -6,7 +6,7 @@ import Session from '../session';
 import Carousel from '../swiper';
 import Cards from '../Cards';
 import Serv from '../serv';
-// import Count from '../count2';
+import  FactsSection from '../count2';
 import Testimonials from '../testimonials';
 // import Tech from '../Tech';
 // import Snap from '../snaps';
@@ -18,17 +18,17 @@ function Home() {
       <Slider />
       <Cards/>
 
-      {/* <Count/> */}
       <Serv/>
 
       <Session/> 
+      <FactsSection/>
+
 
       <Carousel/> 
       {/* <Snap/> */}
 
 
       <Testimonials/>
-      {/* <Tech/> */}
 
       <Footer/>
 

@@ -1,187 +1,127 @@
-.outer-div {
-  height: 50vh;
-  width: 100vw;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+.facts {
+  padding: 80px 0;
+  background-color: #f7f7f7;
 }
 
-.outer-div h3 {
-  font-size: 1.1rem;
-  line-height: 1;
-  font-weight: 300;
-  margin: 0px;
-}
-
-.outer-div p {
-  font-size: 0.75rem;
-  margin: 5px 0px;
-}
-
-.inner-div {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.team-card-1 {
+.container {
   position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
-.team-card-1 .expand-btn-1 {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  border-radius: 25px;
-  background: #4ea6ea;
-  top: 185px;
-  right: 0;
-  transform: translateX(50%);
-  transition: transform 2s ease-out, background 2s ease-out;
-  z-index: 3;
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
 }
 
-.team-card-1 .expand-btn-1 .left-bar {
-  position: absolute;
-  background-color: transparent;
-  top: 17.5px;
-  left: 16px;
-  width: 20px;
-  height: 2px;
-  display: block;
-  float: right;
-  border-radius: 10px 10px 10px 10px;
+.section-header h3 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
 }
-
-.team-card-1 .expand-btn-1 .left-bar:after {
-  content: "";
-  background-color: white;
-  width: 20px;
-  height: 2px;
-  display: block;
-  transform: rotate(35deg);
-  float: right;
-  border-radius: 10px 10px 10px 10px;
-  transition: all 1.5s cubic-bezier(0.25, 1.7, 0.35, 0.8);
-  z-index: -1;
-}
-
-.team-card-1 .expand-btn-1 .right-bar {
-  position: absolute;
-  background-color: transparent;
-  top: 28.5px;
-  left: 16px;
-  width: 20px;
-  height: 2px;
-  display: block;
-  float: right;
-  border-radius: 10px 10px 10px 10px;
-}
-
-.team-card-1 .expand-btn-1 .right-bar:after {
-  content: "";
-  background-color: white;
-  width: 20px;
-  height: 2px;
-  display: block;
-  transform: rotate(-35deg);
-  float: right;
-  border-radius: 10px 10px 10px 10px;
-  transition: all 1.5s cubic-bezier(0.25, 1.7, 0.35, 0.8);
-  z-index: -1;
-}
-
-.team-card-1.expand .left-bar:after {
-  transform-origin: center center;
-  transform: rotate(-150deg);
-}
-
-.team-card-1.expand .right-bar:after {
-  transform-origin: center center;
-  transform: rotate(-150deg);
-}
-
-.team-card-1 .image-card-1 {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  border-radius: 15px;
-  background-color: #f29f39;
-  width: 200px;
-  height: 300px;
+.counter-container {
   position: relative;
-  -webkit-box-shadow: 22px 23px 35px -11px rgba(0, 0, 0, 0.26);
-  -moz-box-shadow: 22px 23px 35px -11px rgba(0, 0, 0, 0.26);
-  box-shadow: 22px 23px 35px -11px rgba(0, 0, 0, 0.26);
-  z-index: 2;
-  transition: filter 2s ease-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
-.team-card-1 .image-card-1 .team-info {
-  color: #fff;
-  min-height: 50px;
+.purecounter {
+  color: orange;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* .purecounter::after {
+  content: '';
   position: absolute;
   width: 100%;
+  height: 3px;
+  background-color: orange;
   bottom: 0;
-  padding: 0px 25px 25px 25px;
-  line-height: 1.4;
-  transition: opacity 2s ease-out, transform 2s ease-out;
-  opacity: 1;
-}
-
-.team-card-1.expand .image-card-1 .text-reduce {
-  opacity: 0;
-  transform: translateX(-10px);
-}
-
-.team-card-1 .role-description {
-  border-radius: 0px 15px 15px 0px;
+  left: 0;
+} */
+.facts .counter-container {
   position: relative;
-  margin-top: -250px;
-  height: 200px;
-  width: 200px;
-  background-color: #fff;
-  -webkit-box-shadow: 0px 0px 35px -2px rgba(0, 0, 0, 0.21);
-  -moz-box-shadow: 0px 0px 35px -2px rgba(0, 0, 0, 0.21);
-  box-shadow: 0px 0px 35px -2px rgba(0, 0, 0, 0.21);
-  transition: transform 2s ease-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
-.team-card-1 .role-description .team-info-des {
-  padding: 25px 25px 0px 25px;
-  transition: opacity 2s ease-out, transform 2s ease-out;
-  opacity: 0;
-  transform: translateX(5px);
+.facts .counter-container .purecounter {
+  color: orange;
+  font-size: 28px;
+  font-weight: bold;
 }
 
-.team-card-1 .role-description .line {
-  width: 0px;
-  border: 1px solid black;
-  margin: 8px 0px 0px 18px;
-  background: #4ea6ea;
-  transition: width 2s ease-out;
+.facts .counter-container .purecounter::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: orange;
+  bottom: -10px;
+  left: 0;
 }
 
-.team-card-1 .role-description .body-text-1 {
-  font-size: 0.75rem;
-  line-height: 1.2;
-  padding: 5px 25px 25px 23px;
-  transition: opacity 2s ease-out, transform 2s ease-out;
-  opacity: 0;
-  transform: translateX(5px);
+.facts .section-header h3 {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
-.team-card-1.expand .team-info-des {
-  transition-delay: 0.5s;
-  opacity: 1;
-  transform: translateX(-5px);
+.facts .section-header h3::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: orange;
+  bottom: -5px;
+  left: 0;
 }
 
-.team-card-1.expand .line {
-  transition-delay: 1.5s;
-  width: 25px;
+.counters .col-lg-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
 }
 
-.team-card-1.expand .body-text-1 {
-  transition-delay: 2.5s;
-  opacity: 1;
-  transform: translateX(-5px);
+.section-header p {
+  font-size: 16px;
+  color: #777;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+
+.row.counters {
+  margin-top: 30px;
+}
+
+.col-lg-3.col-6.text-center {
+  position: relative;
+  width: 100%;
+  padding: 0 15px;
+}
+
+.col-lg-3.col-6.text-center p {
+  margin-bottom: 0;
+}
+
+.purecounter {
+  font-size: 48px;
+  font-weight: bold;
+  color: #333;
+}
+
+.facts-img {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.facts-img img {
+  max-width: 100%;
+  height: auto;
 }
