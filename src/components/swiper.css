@@ -265,3 +265,33 @@ h1 {
     font-size: 14px;
   }
 }
+@media (max-width: 768px) {
+  .rowo {
+    flex-flow: column nowrap;
+  }
+
+  .cardo {
+    width: 100%;
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  .cardo .image {
+    margin-bottom: 16px;
+    min-width: 60px;
+    min-height: 60px;
+  }
+
+  :root {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+  }
+
+  .cardo .info {
+    text-align: center;
+  }
+
+  .cardo .info .title {
+    max-width: 100%;
+    font-size: 14px;
+  }
+}

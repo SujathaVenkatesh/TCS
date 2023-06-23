@@ -41,14 +41,14 @@
 
 .link-button {
   margin-top: 20px;
-  background-color: orange;
-  margin-left: auto; /* Align button to the right within the column */
+  background-color: black;
+  margin-left: auto;
 }
 
 .animated-button {
   transition: transform 0.3s ease-in-out;
   background-color: orange;
-  color: black;
+  color: white;
   border: none;
   border-radius: 5px;
   padding: 10px 20px;

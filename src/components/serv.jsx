@@ -44,7 +44,6 @@ const Serv = () => {
 
   return (
   <>
-    <h1 className="cards-heading">Insights of interest</h1>
 
     <div className='set'>
       <div id="d">

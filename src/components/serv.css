@@ -144,19 +144,19 @@ h3 {
 .itemsa .image {
   height: 100%;
   width: 60%;
-  object-fit: contain; /* Adjust the object-fit property */
+  object-fit: contain; 
 }
 
 .hdd {
   color: black;
-  margin-top: 8px; /* Adjust the value as needed */
+  margin-top: 10px;
   font-size: 25px;
   font-family: 'Rajdhani', sans-serif;
 }
 
 .hdda {
   color: black;
-  margin-top: 8px; /* Adjust the value as needed */
+  margin-top: 10px; 
   font-size: 25px;
   font-family: 'Rajdhani', sans-serif;
 }
@@ -183,7 +183,7 @@ h3 {
   display: flex;
   justify-content: space-between;
   position: absolute;
-  top: 264%;
+  top: 257%;
   left: 27%;
   right: 0;
   transform: translate(0, -75%);
@@ -230,8 +230,10 @@ body {
 
 @media (max-width: 768px) {
   .rectangle {
-    display: block;
+    flex-direction: column;
     margin-bottom: 0;
+    background-color: #202325;
+
   }
 
   #rectangle {
@@ -240,12 +242,16 @@ body {
     margin-bottom: 30px;
     width: 90%;
     height: auto;
+    background-color: #202325;
+
   }
 
   #rectangle1 {
     margin: 0 auto;
     margin-bottom: 30px;
     width: 90%;
+    background-color: #f08620;
+
   }
 
   .h1 {
@@ -319,6 +325,7 @@ body {
     width: 50px;
     height: 50px;
   }
+  
 
   #icon {
     position: static;

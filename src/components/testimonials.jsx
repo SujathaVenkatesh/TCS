@@ -11,7 +11,6 @@ const SnippetCard = () => {
     backgroundColor: 'black',
     color: 'white',
     fontFamily: 'Raleway, Arial, sans-serif',
-    
   };
 
   const cardContainerStyle = {
@@ -85,7 +84,7 @@ const SnippetCard = () => {
     opacity: '0.8',
     margin: '0',
     fontWeight: '800',
-    color:'white',
+    color: 'white',
   };
 
   const spanStyle = {
