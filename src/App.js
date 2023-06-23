@@ -20,7 +20,6 @@ import Cube from './components/Cube';
 // import Cardimg from './components/cardimg';
 function App() {
   return (
-    <>
       <Router>
         <Navbar />
         <Switch>
@@ -38,13 +37,11 @@ function App() {
           <Route path='/Portfolio' component={Portfolio}/>
           <Route path='/Register' component={Register}/>
           <Route path='/Cube' component={Cube}/>
-          {/* <Route path='./Cardimg' component={Cardimg}/> */}
           
 
           
         </Switch>
       </Router>
-    </>
   );
 }
 
