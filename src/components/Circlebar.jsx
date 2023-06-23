@@ -31,11 +31,7 @@ const CircleMenu = () => {
 
   return (
     <section id="circles" className="circle_section">
-       <header className="section-header">
-          <h3 className="section-title">Why Choose Us</h3>
-        </header>
     <div className='circle'>
-   
 
 <div className="circle-left">
   <div className="containerlm">

@@ -63,11 +63,12 @@ const AboutUs = () => {
         </div>
       </div>
       <History/>
-      <CircleMenu />
 
       {/* <Balls/> */}
       <Counter/>
       <Action/>
+      <CircleMenu />
+
 
       <Portfolio/>
 

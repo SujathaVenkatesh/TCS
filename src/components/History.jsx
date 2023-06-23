@@ -17,10 +17,9 @@ const AboutSection = () => {
                 <img src={mission} alt="sour" className="img-fluid" />
                 <div className="icon"><FontAwesomeIcon icon={faChartBar} /></div>
               </div>
-              <h2 className="title"><a href="plan">Our Mission</a></h2>
+              <h3 className="title">Our Mission</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
+              To leverage cutting-edge technology and innovative solutions to empower businesses and individuals, enabling them to thrive in the digital age. We are committed to delivering exceptional IT services, and driving transformation through reliable infrastructure, secure systems, and strategic IT consulting.               </p>
             </div>
           </div>
 
@@ -30,10 +29,9 @@ const AboutSection = () => {
                 <img src={abplan} alt="sour" className="img-fluid" />
                 <div className="icon"><FontAwesomeIcon icon={faBrain} /></div>
               </div>
-              <h2 className="title"><a href="plan">Our Plan</a></h2>
+              <h3 className="title">Our Plan</h3>
               <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-              </p>
+              Continuously invest in research and development to stay at the forefront of technological advancements and drive innovation in our solutions and services.Place our customers at the center of everything we do, understanding their unique needs and delivering tailored IT solutions that exceed their expectations.              </p>
             </div>
           </div>
 
@@ -43,10 +41,9 @@ const AboutSection = () => {
                 <img src={abvission} alt="sour" className="img-fluid" />
                 <div className="icon"><FontAwesomeIcon icon={faImage} /></div>
               </div>
-              <h2 className="title"><a href="plan">Our Vision</a></h2>
+              <h3 className="title">Our Vision</h3>
               <p>
-                Nemo enim ipsam voluptatem quia voluptas sit aut odit aut fugit, sed quia magni dolores eos qui ratione voluptatem sequi nesciunt Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
-              </p>
+              We envision a future where businesses and individuals harness the power of technology to transform and thrive in the digital era. By providing cutting-edge solutions, unparalleled expertise, and personalized support, we aim to empower our clients to unlock their full potential and achieve sustainable growth.              </p>
             </div>
           </div>
 

@@ -109,8 +109,8 @@ h3 {
 
 .itemsa {
   border-radius: 50%;
-  height: 400px; 
-  width: 95%;
+  height: 400px; /* Adjust the height as needed */
+  width: 97%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -163,7 +163,7 @@ h3 {
 
 .hdds {
   color: black;
-  margin-top: 16px; /* Adjust the value as needed */
+  margin-top: 26px; /* Adjust the value as needed */
   font-size: 25px;
   font-family: 'Rajdhani', sans-serif;
 }

@@ -16,6 +16,7 @@ import Content from './components/Content';
 import Ecom from './components/Ecom';
 import Portfolio from './components/portfolio';
 import Register from './components/Register';
+import Cube from './components/Cube';
 function App() {
   return (
     <>
@@ -35,7 +36,7 @@ function App() {
           <Route path='/Ecom' component={Ecom}/>
           <Route path='/Portfolio' component={Portfolio}/>
           <Route path='/Register' component={Register}/>
-
+          <Route path='/Cube' component={Cube}/>
 
           
 

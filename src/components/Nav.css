@@ -139,10 +139,6 @@ left:0;
     font-size: 1.8rem;
     cursor: pointer;
   }
-  :root {
-    font-family: 'IBM Plex Sans Condensed', sans-serif;
-  }
-  
 
   .fa-times {
     color: #fff;
