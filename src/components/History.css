@@ -3,6 +3,9 @@
   background-color: #f7f7f7;
 
 }
+:root {
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+}
 
 .containerhis {
   position: relative;
@@ -49,8 +52,8 @@
 
 .about-col .icon {
   position: absolute;
-  top: 91%;
-  left: 50%;
+  top: 90%;
+  left: 20%;
   transform: translate(-50%, -50%);
   background-color: orange;
   color: #fff;

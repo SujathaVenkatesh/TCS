@@ -7,10 +7,11 @@ import {Link} from 'react-router-dom';
 
 const   swiper = () => {
   return (<>
-        <h1>Beleif In Action</h1>
 
     <div className="wrapper">
+
       <div className="containero">
+     
         <div className="rowo">
           {/* Card 1 */}
           <div className="cardo">

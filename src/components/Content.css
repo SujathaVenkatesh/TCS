@@ -1,3 +1,7 @@
+:root {
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+}
+
 .nameo {
     background: url('./images/cont.jpg') center center/cover no-repeat;
     height: 80vh;

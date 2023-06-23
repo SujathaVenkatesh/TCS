@@ -5,6 +5,10 @@
   font-family: 'PT Sans', sans-serif;
   
 }
+:root {
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+}
+
 
 .home,
 .products,

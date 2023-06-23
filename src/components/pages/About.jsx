@@ -5,6 +5,7 @@ import Portfolio from '../portfolio';
 import Counter from '../counter';
 import Footer from '../Footer';
 import CircleMenu from '../Circlebar';
+import Action from '../action';
 
 import History from '../History';
 // import Balls from '../balls';
@@ -66,6 +67,8 @@ const AboutUs = () => {
 
       {/* <Balls/> */}
       <Counter/>
+      <Action/>
+
       <Portfolio/>
 
       <Footer />

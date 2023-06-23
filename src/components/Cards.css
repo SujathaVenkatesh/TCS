@@ -1,3 +1,7 @@
+:root {
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+}
+
 .cards-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr); 

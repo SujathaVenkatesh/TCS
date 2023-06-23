@@ -8,9 +8,7 @@ import Cards from '../Cards';
 import Serv from '../serv';
 import  FactsSection from '../count2';
 import Testimonials from '../testimonials';
-// import Tech from '../Tech';
-// import Snap from '../snaps';
-// import Carluosel from '../caruosel';
+import Snap from '../snaps';
 import './Home.css';
 function Home() {
   return (
@@ -21,11 +19,12 @@ function Home() {
       <Serv/>
 
       <Session/> 
-      <FactsSection/>
 
 
       <Carousel/> 
-      {/* <Snap/> */}
+      <FactsSection/>
+
+      <Snap/>
 
 
       <Testimonials/>

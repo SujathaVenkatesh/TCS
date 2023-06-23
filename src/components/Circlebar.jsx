@@ -30,19 +30,16 @@ const CircleMenu = () => {
   };
 
   return (
-    <section id="circle" className="circle_section">
-    <h5 className="circle_subheading">Why Choose Us</h5>
-
+    <section id="circles" className="circle_section">
+       <header className="section-header">
+          <h3 className="section-title">Why Choose Us</h3>
+        </header>
     <div className='circle'>
+   
 
- 
-
-      <div className="circle-left">
-      {/* <h2 className="headi">Why Choose Us</h2> */}
-
-
-        <div className="containerlm">
-          <img
+<div className="circle-left">
+  <div className="containerlm">
+        <img
             className="dolu"
             src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
             alt="portrait"

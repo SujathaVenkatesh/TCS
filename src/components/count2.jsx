@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import CountUp from 'react-countup';
+import { FaUsers, FaBriefcase, FaClock, FaToolbox } from 'react-icons/fa';
 import VisibilitySensor from 'react-visibility-sensor';
 import './count2.css';
 import factsImage from './images/port4.jpg';
@@ -14,19 +15,22 @@ const FactsSection = () => {
   };
 
   return (
-    <section className="facts">
+    <section id="signs">
       <div className="container">
         <header className="section-header">
           <h3>Facts</h3>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+          <p>The IT field is dynamic, constantly evolving, and encompasses various domains such as software development, cybersecurity, data analytics, artificial intelligence, cloud computing, Internet of Things (IoT), and more.</p>
         </header>
 
         <div className="row counters">
           <div className="col-lg-3 col-6 text-center">
             <VisibilitySensor onChange={onVisibilityChange}>
               <div className="counter-container">
-                <CountUp start={0} end={isVisible ? 232 : 0} duration={1} className="purecounter" />
-                <p>Clients</p>
+                <FaUsers style={{ fontSize: '60px' }} />
+                {isVisible && (
+                  <CountUp start={0} end={232} duration={1} className="purecounter" />
+                )}
+                <h2 className='cou'>Clients</h2>
               </div>
             </VisibilitySensor>
           </div>
@@ -34,8 +38,11 @@ const FactsSection = () => {
           <div className="col-lg-3 col-6 text-center">
             <VisibilitySensor onChange={onVisibilityChange}>
               <div className="counter-container">
-                <CountUp start={0} end={isVisible ? 421 : 0} duration={1} className="purecounter" />
-                <p>Projects</p>
+                <FaBriefcase style={{ fontSize: '60px' }} />
+                {isVisible && (
+                  <CountUp start={0} end={421} duration={1} className="purecounter" />
+                )}
+                <h2 className='cou'>Projects</h2>
               </div>
             </VisibilitySensor>
           </div>
@@ -43,8 +50,11 @@ const FactsSection = () => {
           <div className="col-lg-3 col-6 text-center">
             <VisibilitySensor onChange={onVisibilityChange}>
               <div className="counter-container">
-                <CountUp start={0} end={isVisible ? 1364 : 0} duration={1} className="purecounter" />
-                <p>Hours Of Support</p>
+                <FaClock style={{ fontSize: '60px' }} />
+                {isVisible && (
+                  <CountUp start={0} end={1364} duration={1} className="purecounter" />
+                )}
+                <h2 className='cou'>Hours Of Support</h2>
               </div>
             </VisibilitySensor>
           </div>
@@ -52,8 +62,11 @@ const FactsSection = () => {
           <div className="col-lg-3 col-6 text-center">
             <VisibilitySensor onChange={onVisibilityChange}>
               <div className="counter-container">
-                <CountUp start={0} end={isVisible ? 38 : 0} duration={1} className="purecounter" />
-                <p>Hard Workers</p>
+                <FaToolbox style={{ fontSize: '60px' }} />
+                {isVisible && (
+                  <CountUp start={0} end={38} duration={1} className="purecounter" />
+                )}
+                <h2 className='cou'>Hard Workers</h2>
               </div>
             </VisibilitySensor>
           </div>

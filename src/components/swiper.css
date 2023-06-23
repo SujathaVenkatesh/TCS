@@ -5,19 +5,27 @@ body {
 body * {
   box-sizing: border-box;
 }
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .wrapper {
   background: linear-gradient(30deg, #151515 10%, #0e1822);
   min-height: 100vh;
   width: 100%;
   display: flex;
+  padding-top: 10px;
+  color: white;
+  
 }
 
 .containero {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 30px;
+  padding: 10px;
   display: flex;
   gap: 40px;
   flex-flow: column nowrap;
@@ -99,7 +107,7 @@ body * {
 
 .cardo.info .btn {
   margin-top: 28px;
-  color: #fff;
+  color: black;
   background: transparent;
   border: unset;
   border-radius: 16px;
@@ -178,7 +186,7 @@ body * {
   padding: 10px 20px;
   margin-top: 20px;
   background-color: white;
-  color: #fff;
+  color: black;
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s ease;
@@ -242,6 +250,11 @@ body * {
     min-width: 60px;
     min-height: 60px;
   }
+  :root {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+  }
+
+  
 
   .cardo .info {
     text-align: center;

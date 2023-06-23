@@ -1,6 +1,10 @@
 .depart-container {
     display: flex;
   }
+  :root {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+  }
+  
   h1 {
     display: flex;
     justify-content: center;

@@ -1,6 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
-/* Add your custom CSS code here */
+:root {
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+}
 
 .theme-text {
   color: orange;

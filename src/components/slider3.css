@@ -10,7 +10,10 @@
     object-fit: contain;
     color: black;
   }
-  
+  :root {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+  }
+   
   @keyframes zoomIn {
     0% {
       background-size: 100%;

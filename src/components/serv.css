@@ -1,4 +1,3 @@
-
 .rectangle {
   display: table-cell;
   margin-bottom: -300px;
@@ -6,16 +5,15 @@
 
 .set {
   height: 450px;
-  width: 1270px;
+  width: 1000px;
   max-width: 100%;
   width: 100%;
 }
 
-  .cards-heading{
-    background-color: black;
-    color: white;
-  }
-  
+.cards-heading {
+  background-color: black;
+  color: white;
+}
 
 #rectangle {
   margin-left: -50px;
@@ -28,7 +26,7 @@
 #rectangle1 {
   justify-content: center;
   margin-left: -100px;
-  width: 850px;
+  width: 790px;
   background-color: #f08620;
 }
 
@@ -43,6 +41,7 @@
   z-index: 1;
   margin-left: 7px;
 }
+
 .hdd {
   color: black;
   margin-top: -10px;
@@ -64,7 +63,6 @@
   font-family: 'Rajdhani', sans-serif;
 }
 
-
 .h1 {
   color: #f08620;
   margin-top: -550px;
@@ -74,14 +72,14 @@
 }
 
 h2 {
-  margin-right: -100px; /* Increased margin-left for more gap */
+  margin-right: -100px;
   margin-top: 10px;
   font-family: 'Rajdhani', sans-serif;
   color: white;
 }
 
 h3 {
-  margin-left: 8px; /* Increased margin-left for more gap */
+  margin-left: 8px;
   margin-top: 25px;
   font-family: 'Roboto', sans-serif;
   color: #f08620;
@@ -107,13 +105,12 @@ h3 {
   left: auto;
   margin-right: 50px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  
 }
 
 .itemsa {
   border-radius: 50%;
-  height: 400px; /* Adjust the height as needed */
-  width: 98%;
+  height: 400px; 
+  width: 95%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -121,14 +118,15 @@ h3 {
   text-align: center;
   margin-top: -50px;
 }
+
 /* CSS code */
 .image-product-development {
-  width: 200px;
+  width: 100px;
   height: 200px; /* Adjust the height as needed */
 }
 
 .image-content-development {
-  width: 200px;
+  width: 100px;
   height: 200px; /* Adjust the height as needed */
 }
 
@@ -139,17 +137,15 @@ h3 {
 
 .itemsa .image {
   height: 100%;
-  width: 100%;
+  width: 90%;
   object-fit: contain;
 }
 
-
 .itemsa .image {
   height: 100%;
-  width: 100%;
+  width: 60%;
   object-fit: contain; /* Adjust the object-fit property */
 }
-
 
 .hdd {
   color: black;
@@ -160,7 +156,7 @@ h3 {
 
 .hdda {
   color: black;
-  margin-top: 16px; /* Adjust the value as needed */
+  margin-top: 8px; /* Adjust the value as needed */
   font-size: 25px;
   font-family: 'Rajdhani', sans-serif;
 }
@@ -172,7 +168,6 @@ h3 {
   font-family: 'Rajdhani', sans-serif;
 }
 
-
 .hd {
   color: red;
   margin-bottom: 50px;
@@ -180,15 +175,19 @@ h3 {
   font-family: 'Rajdhani', sans-serif;
 }
 
+:root {
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+}
+
 .bts-group {
   display: flex;
   justify-content: space-between;
   position: absolute;
-  top: 274%;
+  top: 264%;
   left: 27%;
   right: 0;
   transform: translate(0, -75%);
-  z-index: 990; /* Adjust the z-index value */
+  z-index: 990;
 }
 
 .bts-group button {
@@ -198,13 +197,13 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: white;
 }
 
 .bts-group button:hover {
   background-color: #f08620;
   color: white;
 }
-
 
 #icon {
   position: absolute;
@@ -220,6 +219,7 @@ h3 {
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
 .container {
@@ -228,7 +228,6 @@ body {
   box-sizing: border-box;
 }
 
-/* Adjustments for screens with a maximum width of 768px */
 @media (max-width: 768px) {
   .rectangle {
     display: block;

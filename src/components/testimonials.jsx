@@ -133,15 +133,6 @@ const SnippetCard = () => {
     },
   ];
 
-  const sessionHeadingStyle = {
-    textAlign: 'center',
-    fontSize: '24px',
-    fontWeight: 'bold',
-    marginBottom: '20px',
-    color: 'white',
-    fontFamily: 'Raleway, Arial, sans-serif',
-    marginRight:'10px',
-  };
 
   const handleNextSlide = useCallback(() => {
     setActiveIndex((prevIndex) =>
@@ -156,8 +147,9 @@ const SnippetCard = () => {
 
   return (
     <div style={containerStyle}>
-      <h2 style={sessionHeadingStyle}>What Clients Say</h2>
-
+ <header className="section-header">
+          <h3>What Clients Say</h3>
+        </header>
       <div className="slider" style={cardContainerStyle}>
         {snippets.map((snippet, index) => (
           <div

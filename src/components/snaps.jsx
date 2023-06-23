@@ -1,32 +1,63 @@
 import React from 'react';
-import './snap.css';
+import Swiper from 'swiper';
+import 'swiper/swiper.min.css';
 
-function Snaps() {
-  
+import wgs1 from './images/wgs1.png';
+import wgs2 from './images/wgs2.png';
+import wgs3 from './images/wgs3.png';
+import wgs4 from './images/wgs4.png';
+import wgs5 from './images/wgs5.png';
+import wgs6 from './images/wgs6.png';
+import wgs7 from './images/wgs7.png';
+import './snap.css';
+const ClientsSection = () => {
+  React.useEffect(() => {
+    new Swiper('.clients-slider', {
+      slidesPerView: 'auto',
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  }, []);
 
   return (
-    <div className="containerll">
-      <h2>Our Partners</h2>
-        <div className="slidelactive">
-          <img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg" alt="Logo" />
-        </div>
-        <div className="slidel">
-          <img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg" alt="Logo" />
-        </div>
-        <div className="slidel">
-          <img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg" alt="Logo" />
-        </div>
-        <div className="slidel">
-          <img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg" alt="Logo" />
-        </div>
-        <div className="slidel">
-          <img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg" alt="Logo" />
-        </div>
-        <div className="slidel">
-          <img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg" alt="Logo" />
-        </div>
-    </div>
-  );
-}
+    <section id="clients">
+      <div className="container" data-aos="zoom-in">
+        <header className="section-header">
+          <h3>Our Clients</h3>
+        </header>
 
-export default Snaps;
+        <div className="clients-slider swiper">
+          <div className="swiper-wrapper align-items-center">
+            <div className="swiper-slide">
+              <img src={wgs1} className="img-fluid" alt="" />
+            </div>
+            <div className="swiper-slide">
+            <img src={wgs2} className="img-fluid" alt="" />
+            </div>
+            <div className="swiper-slide">
+            <img src={wgs3} className="img-fluid" alt="" />
+            </div>
+            <div className="swiper-slide">
+            <img src={wgs4} className="img-fluid" alt="" />
+            </div>
+            <div className="swiper-slide">
+            <img src={wgs5} className="img-fluid" alt="" />
+            </div>
+            <div className="swiper-slide">
+            <img src={wgs6} className="img-fluid" alt="" />
+            </div>
+            <div className="swiper-slide">
+            <img src={wgs7} className="img-fluid" alt="" />
+            </div>
+          </div>
+          <div className="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default ClientsSection;

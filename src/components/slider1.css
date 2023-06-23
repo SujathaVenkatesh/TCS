@@ -11,6 +11,10 @@
   color: black;
   animation: zoomInOut 7s infinite alternate;
 }
+:root {
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+}
+
 
 @keyframes zoomInOut {
   0% {
