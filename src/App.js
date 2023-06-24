@@ -17,11 +17,7 @@ import Ecom from './components/Ecom';
 import Portfolio from './components/portfolio';
 import Register from './components/Register';
 import Cube from './components/Cube';
-<<<<<<< HEAD
-import Welcome from './components/Welcome';
-=======
->>>>>>> origin/master
-// import Cardimg from './components/cardimg';
+import Welcome from './components/Welcome';// import Cardimg from './components/cardimg';
 function App() {
   return (
       <Router>
@@ -41,10 +37,8 @@ function App() {
           <Route path='/Portfolio' component={Portfolio}/>
           <Route path='/Register' component={Register}/>
           <Route path='/Cube' component={Cube}/>
-<<<<<<< HEAD
           <Route path='/Welcome' component={Welcome}/>
-=======
->>>>>>> origin/master
+
           
 
           
