@@ -10,15 +10,15 @@ const Sercon = () => {
       title: "Web Development",
     },
     {
-      url: "C:/Users/SUJATHA V/OneDrive/Desktop/React web/reactwebpro/webproject/src/components/images/imge8.jpg",
+      url: "https://t4.ftcdn.net/jpg/03/23/45/53/360_F_323455393_fZckxWnDgM7yMnjBFeyCB3GKmeD1wInS.jpg",
       title: "Digital Marketing",
     },
     {
-      url: "C:/Users/SUJATHA V/OneDrive/Desktop/React web/reactwebpro/webproject/src/components/images/ecom.jpg",
+      url: "https://media.istockphoto.com/id/1173805365/photo/software-developer-freelancer-working-with-program-code.jpg?s=612x612&w=0&k=20&c=L5Mn49_UTmymts6rKNKTladpQzANMQ018ZizMOquopw=",
       title: "Product Development",
     },
     {
-      url: "C:/Users/SUJATHA V/OneDrive/Desktop/React web/reactwebpro/webproject/src/components/images/imge4.jpg",
+      url: "https://www.shutterstock.com/image-illustration/cyber-space-world-business-technology-260nw-1401347999.jpg",
       title: "Content Development",
     },
   ];
