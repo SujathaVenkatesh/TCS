@@ -17,6 +17,7 @@ import Ecom from './components/Ecom';
 import Portfolio from './components/portfolio';
 import Register from './components/Register';
 import Cube from './components/Cube';
+import Welcome from './components/Welcome';
 // import Cardimg from './components/cardimg';
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
           <Route path='/Portfolio' component={Portfolio}/>
           <Route path='/Register' component={Register}/>
           <Route path='/Cube' component={Cube}/>
+          <Route path='/Welcome' component={Welcome}/>
           
 
           

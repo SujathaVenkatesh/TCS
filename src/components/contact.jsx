@@ -32,10 +32,9 @@ function ContactForm() {
 
     // Send form data to EmailJS
     emailjs
-      .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_USER_ID')
+      .sendForm('service_y1kjht5', 'template_wyspvrn', form.current, 'nZl37Mjc5cfRGF4_U')
       .then((result) => {
         console.log(result.text);
-        // Reset the form after successful submission
         setName('');
         setEmail('');
         setMessage('');
@@ -76,13 +75,15 @@ function ContactForm() {
               />
             </div>
           </div>
-          <div className="col-md-12 message-input">
+          <div className="col-md-6 col-sm-6 col-xs-12">
             <div className="single-input-field">
               <textarea
                 placeholder="Write Your Message"
                 name="message"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
+                style={{ color: 'black' }} 
+
               ></textarea>
             </div>
           </div>

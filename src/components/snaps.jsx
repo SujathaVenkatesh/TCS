@@ -19,9 +19,11 @@ const ClientsSection = () => {
         el: '.swiper-pagination',
         clickable: true,
       },
+      autoplay: {
+        delay: 2000, // Change delay as desired (in milliseconds)
+      },
     });
   }, []);
-
   return (
     <section id="clients">
       <div className="container" data-aos="zoom-in">
