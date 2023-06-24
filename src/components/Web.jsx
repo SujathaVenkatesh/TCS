@@ -4,7 +4,7 @@ import Cube from './Cube';
 
 function Webs() {
   return (
-    <>
+    <div>
       <div className="nameh"></div>
       <div className="about-us-container">
         <h1 className="headp">Web Development</h1>
@@ -21,7 +21,7 @@ function Webs() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

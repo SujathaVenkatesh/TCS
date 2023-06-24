@@ -11,7 +11,7 @@ import History from '../History';
 // import Balls from '../balls';
 const AboutUs = () => {
   return (
-    <>
+    <div>
       <Slider2 />
       <div className="about-us-container">
         <h1 className="head">About Us</h1>
@@ -73,7 +73,7 @@ const AboutUs = () => {
       <Portfolio/>
 
       <Footer />
-    </>
+    </div>
   );
 };
 

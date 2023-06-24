@@ -6,7 +6,8 @@ import {Link} from 'react-router-dom';
 
 
 const   swiper = () => {
-  return (<>
+  return (
+  <section className='swip'>
 
     <div className="wrapper">
 
@@ -17,7 +18,7 @@ const   swiper = () => {
           <div className="cardo">
             <div className="info">
               <div className="sub">Digital Marketing</div>
-              <div className="title">Digital marketing content is strategic and engaging online material created to promote brands, products, or services and drive targeted audience engagement and conversions.</div>
+              <div className="title">Digital marketing content is strategic and engaging online material created to promote brands, products, or services.</div>
               <div className="text-center">
           <button className="link-button animated-button" >
                <Link to="/DM">Learn</Link></button>
@@ -31,7 +32,7 @@ const   swiper = () => {
           <div className="cardo">
             <div className="info">
               <div className="sub">Web Development</div>
-              <div className="title">A web developer is a professional who designs and builds websites and web applications using various programming languages and technologies.</div>
+              <div className="title">A web developer is a professional who designs and builds websites and web applications.</div>
               <div className="text-center">
           <button className="link-button animated-button" >
                <Link to="/Webs">Learn</Link></button>
@@ -60,7 +61,7 @@ UI designer creates visually engaging and user-friendly digital interfaces.</div
 </div>
         
     </div>
-    </>
+    </section>
   );
 }
 

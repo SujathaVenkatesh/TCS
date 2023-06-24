@@ -12,7 +12,7 @@ import Snap from '../snaps';
 import './Home.css';
 function Home() {
   return (
-    <>
+    <div>
       <Slider />
       <Cards/>
 
@@ -31,7 +31,7 @@ function Home() {
 
       <Footer/>
 
-    </>
+    </div>
   );
 }
 

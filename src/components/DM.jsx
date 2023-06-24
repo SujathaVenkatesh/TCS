@@ -4,7 +4,7 @@ import digi from './images/digi.jpg';
 
 function DM() {
   return (
-    <>
+    <div>
       <div className="nameg">
       </div>
       <div className="about-us-container">
@@ -23,7 +23,7 @@ In the realm of Digital Marketing, businesses employ tactics like search engine 
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

@@ -5,7 +5,7 @@ import ui from './images/ui.avif';
 
 function UI() {
   return (
-    <>
+    <div>
       <div className="namev">
       </div>
       <div className="about-us-container">
@@ -24,7 +24,7 @@ function UI() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

@@ -13,7 +13,7 @@ import Sercon from '../sercon';
 // import Webs from '../Web';
 function Services() {
   return (
-    <>
+    <div>
       <Sercon/>
     {/* <Webs/> */}
     <div className="about-us-container">
@@ -110,7 +110,7 @@ function Services() {
     </div>
     </div>
     <Footer/>
-    </>
+    </div>
   );
 }
 

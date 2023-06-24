@@ -43,7 +43,7 @@ const Serv = () => {
   }, []);
 
   return (
-  <>
+  <div>
 
     <div className='set'>
       <div id="d">
@@ -107,7 +107,7 @@ const Serv = () => {
         </div>
       </div>
     </div>
-  </>
+  </div>
   );
 };
 

@@ -16,12 +16,12 @@ function Counter() {
       const count = () => {
         counter++;
         counteritem.innerHTML = counter;
-        if (counter === parseInt(counteritem.dataset.number)) {
+        if (counter === parseInt(counteritem.dataset.number, 10)) {
           clearInterval(timing);
         }
       };
 
-      const timing = setInterval(count, parseInt(counteritem.dataset.speed) / counter);
+      const timing = setInterval(count, parseInt(counteritem.dataset.speed, 10) / counter);
     });
   }, []);
 
@@ -33,8 +33,9 @@ function Counter() {
         <h4 className="hh2">We enable business to embrace technologies<br />and empower them to achieve their business<br />goals and objectives</h4>
         <button>GET A QUOTE</button>
         <button>
-                <Link to="/Portfolio">PORTFOLIO</Link>
-              </button>      </div>
+          <Link to="/Portfolio">PORTFOLIO</Link>
+        </button>
+      </div>
 
       <div className="rectangle4">
         <div>
