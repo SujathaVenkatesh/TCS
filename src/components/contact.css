@@ -12,11 +12,7 @@
 }
 .contact-form-container {
   border: 2px solid orange;
-<<<<<<< HEAD
-  padding: 25px;
-=======
   padding: 20px;
->>>>>>> ec902a141414fbdd897c6c6e806ab98b5b6ef7ca
   margin-top: 20px;
 }
 
@@ -79,11 +75,10 @@
   font-weight: 600;
   padding: 10px 0;
   text-transform: capitalize;
-<<<<<<< HEAD
+
   width: 200px;
-=======
   width: 150px;
->>>>>>> ec902a141414fbdd897c6c6e806ab98b5b6ef7ca
+
   margin-top: 20px;
   font-size: 16px;
   border: none;
@@ -114,21 +109,13 @@
 
 
 .contact-info-icon {
-<<<<<<< HEAD
   margin-bottom: 18px;
-=======
   margin-bottom: 15px;
->>>>>>> ec902a141414fbdd897c6c6e806ab98b5b6ef7ca
 }
 
 .contact-info-item {
   background: #071c34;
-<<<<<<< HEAD
-  padding: 35px 0px;
-=======
-  padding: 30px 0px;
->>>>>>> ec902a141414fbdd897c6c6e806ab98b5b6ef7ca
-}
+  padding: 35px 0px;}
 
 .contact-page-sec .contact-page-form h2 {
   color: orange;
@@ -146,11 +133,8 @@
   background: #f9f9f9;
   border: 1px solid black;
   margin-bottom: 20px;
-<<<<<<< HEAD
   padding: 18px 26px;
-=======
   padding: 12px 16px;
->>>>>>> ec902a141414fbdd897c6c6e806ab98b5b6ef7ca
   width: 100%;
   border-radius: 4px;
 }
@@ -202,13 +186,10 @@ form {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
-<<<<<<< HEAD
 
 }
 
-=======
-}
->>>>>>> ec902a141414fbdd897c6c6e806ab98b5b6ef7ca
+
 input,
 textarea {
   width: 100%;
@@ -266,15 +247,12 @@ textarea {
 
 .contact-page-form {
   display: inline-block;
-<<<<<<< HEAD
-  width: 110%;
+    width: 110%;
   margin-top: 30px;
 
 
-=======
   width: 100%;
   margin-top: 30px;
->>>>>>> ec902a141414fbdd897c6c6e806ab98b5b6ef7ca
 }
 
 .contact-page-map {
