@@ -10,6 +10,12 @@
   display: flex;
   justify-content: space-between;
 }
+.contact-form-container {
+  border: 2px solid orange;
+  padding: 25px;
+  margin-top: 20px;
+}
+
 
 .col-md-4 {
   flex-basis: calc(33.33% - 20px);
@@ -51,7 +57,7 @@
 .single-input-field input,
 .single-input-field textarea {
   background: #fff;
-  border: 1px solid #f9f9f9;
+  border: 1px solid black;
   margin-bottom: 20px;
   padding: 12px 16px;
   width: 100%;
@@ -64,12 +70,12 @@
 
 .single-input-fieldsbtn input[type="submit"] {
   background: orange;
-  color: #fff;
+  color: black;
   display: inline-block;
   font-weight: 600;
   padding: 10px 0;
   text-transform: capitalize;
-  width: 150px;
+  width: 200px;
   margin-top: 20px;
   font-size: 16px;
   border: none;
@@ -100,12 +106,12 @@
 
 
 .contact-info-icon {
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 }
 
 .contact-info-item {
   background: #071c34;
-  padding: 30px 0px;
+  padding: 35px 0px;
 }
 
 .contact-page-sec .contact-page-form h2 {
@@ -122,9 +128,9 @@
 .contact-page-form input,
 .contact-page-form textarea {
   background: #f9f9f9;
-  border: 1px solid #f9f9f9;
+  border: 1px solid black;
   margin-bottom: 20px;
-  padding: 12px 16px;
+  padding: 18px 26px;
   width: 100%;
   border-radius: 4px;
 }
@@ -176,7 +182,9 @@ form {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
+
 }
+
 input,
 textarea {
   width: 100%;
@@ -234,8 +242,10 @@ textarea {
 
 .contact-page-form {
   display: inline-block;
-  width: 100%;
+  width: 110%;
   margin-top: 30px;
+
+
 }
 
 .contact-page-map {
