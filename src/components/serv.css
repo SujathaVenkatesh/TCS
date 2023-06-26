@@ -1,3 +1,4 @@
+
 .rectangle {
   display: table-cell;
   margin-bottom: -300px;
@@ -116,7 +117,7 @@ h3 {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  margin-top: -50px;
+  margin-top: -10px;
 }
 
 /* CSS code */
@@ -183,7 +184,7 @@ h3 {
   display: flex;
   justify-content: space-between;
   position: absolute;
-  top: 257%;
+  top: 258%;
   left: 27%;
   right: 0;
   transform: translate(0, -75%);

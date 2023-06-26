@@ -7,10 +7,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+<<<<<<< HEAD
+=======
 :root {
   font-family: 'IBM Plex Sans Condensed', sans-serif;
 }
 
+>>>>>>> origin/master
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
